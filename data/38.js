@@ -1,0 +1,25 @@
+﻿// Liste complète des 22 communes de la Wilaya de Tissemsilt (38)
+var communesWilayaActive = [
+    { fr: "Ammari", zip: "38002", ar: "عماري" },
+    { fr: "Beni Chaïb", zip: "38010", ar: "بني شعيب" },
+    { fr: "Beni Lahcene", zip: "38012", ar: "بني لحسن" },
+    { fr: "Bordj El Emir Abdelkader", zip: "38006", ar: "برج الأمير عبد القادر" },
+    { fr: "Bordj Bou Naâma", zip: "38003", ar: "برج بونعامة" },
+    { fr: "Boucaid", zip: "38004", ar: "بوقايد" },
+    { fr: "Layoune", zip: "38009", ar: "العيون" },
+    { fr: "Khemisti", zip: "38001", ar: "خميستي" },
+    { fr: "Larbaa", zip: "38005", ar: "الأربعاء" },
+    { fr: "Lardjem", zip: "38007", ar: "الارجم" },
+    { fr: "Maâcem", zip: "38019", ar: "المعاصم" },
+    { fr: "Melaïb", zip: "38018", ar: "ملاعب" },
+    { fr: "Oued El Abtal", zip: "38022", ar: "وادي الأبطال" },
+    { fr: "Ouled Bessem", zip: "38013", ar: "أولاد بسام" },
+    { fr: "Sidi Abed", zip: "38011", ar: "سيدي عابد" },
+    { fr: "Sidi Boutouchent", zip: "38015", ar: "سيدي بوتوشنت" },
+    { fr: "Sidi Lantri", zip: "38014", ar: "سيدي لنتري" },
+    { fr: "Sidi Slimane", zip: "38017", ar: "سيدي سليمان" },
+    { fr: "Tamalaht", zip: "38008", ar: "تملاحت" },
+    { fr: "Théniet El Had", zip: "38021", ar: "ثنية الحد" },
+    { fr: "Tissemsilt", zip: "38000", ar: "تيسمسيلت" },
+    { fr: "Youssoufia", zip: "38016", ar: "اليوسفية" }
+];

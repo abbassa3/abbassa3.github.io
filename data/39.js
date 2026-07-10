@@ -1,0 +1,25 @@
+﻿// Liste complète des 22 communes de la Wilaya d'El Oued (39)
+var communesWilayaActive = [
+    { fr: "Bayadha", zip: "39011", ar: "البياضة" },
+    { fr: "Ben Choud (Ben Guecha)", zip: "39018", ar: "بن قشة" },
+    { fr: "Debila", zip: "39012", ar: "الدبيلة" },
+    { fr: "El Ogla", zip: "39014", ar: "العقلة" },
+    { fr: "El Oued", zip: "39000", ar: "الوادي" },
+    { fr: "Guemar", zip: "39004", ar: "ڤمار" },
+    { fr: "Haci Khalifa", zip: "39015", ar: "حاسي خليفة" },
+    { fr: "Hamraia", zip: "39023", ar: "الحمراية" },
+    { fr: "Hassani Abdelkrim", zip: "39003", ar: "حساني عبد الكريم" },
+    { fr: "Kouinine", zip: "39002", ar: "كوينين" },
+    { fr: "Magrane", zip: "39016", ar: "مقران" },
+    { fr: "Mih Ouansa", zip: "39013", ar: "ميه وانسة" },
+    { fr: "Nakhla", zip: "39022", ar: "النخلة" },
+    { fr: "Oued El Alenda", zip: "39001", ar: "وادي العلندة" },
+    { fr: "Ourmes", zip: "39005", ar: "أورماس" },
+    { fr: "Reguiba", zip: "39010", ar: "الرقيبة" },
+    { fr: "Robbah", zip: "39006", ar: "رباح" },
+    { fr: "Sidi Amrane", zip: "39017", ar: "سيدي عمران" },
+    { fr: "Sidi Aoun", zip: "39019", ar: "سيدي عون" },
+    { fr: "Taghzout", zip: "39008", ar: "تاغزوت" },
+    { fr: "Taleb Larbi", zip: "39020", ar: "طالب العربي" },
+    { fr: "Trifaoui", zip: "39021", ar: "الطريفاوي" }
+];

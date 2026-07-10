@@ -1,0 +1,25 @@
+﻿// Liste complète des 22 communes de la Wilaya d'El Bayadh (32)
+var communesWilayaActive = [
+    { fr: "Aïn El Orak", zip: "32014", ar: "عين العراك" },
+    { fr: "Arbaouat", zip: "32010", ar: "عرباوة" },
+    { fr: "Brezina", zip: "32003", ar: "بريزينة" },
+    { fr: "Boualem", zip: "32002", ar: "بوعلام" },
+    { fr: "Bougtoub", zip: "32004", ar: "بوقطب" },
+    { fr: "Boussemghoun", zip: "32012", ar: "بوسمغون" },
+    { fr: "Cheguig", zip: "32016", ar: "الشقيق" },
+    { fr: "Chellala", zip: "32011", ar: "شلالة" },
+    { fr: "El Bayadh", zip: "32000", ar: "البيض" },
+    { fr: "El Biodh Sidi Cheikh", zip: "32005", ar: "الأبيض سيدي الشيخ" },
+    { fr: "El Kheiter", zip: "32006", ar: "الخيثر" },
+    { fr: "El Mehara", zip: "32013", ar: "المحرة" },
+    { fr: "Gassoul", zip: "32008", ar: "غاسول" },
+    { fr: "Kaf El Ahmar", zip: "32001", ar: "الكاف الأحمر" },
+    { fr: "Krakda", zip: "32015", ar: "كركدا" },
+    { fr: "Rogassa", zip: "32017", ar: "رقاصة" },
+    { fr: "Sidi Ameur", zip: "32018", ar: "سيدي عامر" },
+    { fr: "Sidi Slimane", zip: "32021", ar: "سيدي سليمان" },
+    { fr: "Sidi Tifour", zip: "32019", ar: "سيدي طيفور" },
+    { fr: "Stitten", zip: "32009", ar: "ستيتن" },
+    { fr: "Tousmouline", zip: "32007", ar: "توسمولين" },
+    { fr: "Val d'Or (Ghassoul)", zip: "32020", ar: "الـغـاسـول" }
+];

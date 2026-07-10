@@ -1,0 +1,28 @@
+﻿// Liste complète des 25 communes de la Wilaya de Blida (09)
+var communesWilayaActive = [
+    { fr: "Aïn Romana", zip: "09012", ar: "عين الرمانة" },
+    { fr: "Benkhelil", zip: "09025", ar: "بن خليل" },
+    { fr: "Beni Mered", zip: "09015", ar: "بني مراد" },
+    { fr: "Beni Tamou", zip: "09016", ar: "بني تامو" },
+    { fr: "Blida", zip: "09000", ar: "البليدة" },
+    { fr: "Bouarfa", zip: "09001", ar: "بوعرفة" },
+    { fr: "Boufarik", zip: "09002", ar: "بوفاريك" },
+    { fr: "Bougara", zip: "09003", ar: "بوقرة" },
+    { fr: "Bouinan", zip: "09018", ar: "بوعينان" },
+    { fr: "Chebli", zip: "09009", ar: "شبلي" },
+    { fr: "Chiffa", zip: "09004", ar: "الشفة" },
+    { fr: "Chréa", zip: "09020", ar: "الشريعة" },
+    { fr: "Djebabra", zip: "09024", ar: "الجبابرة" },
+    { fr: "El Affroun", zip: "09005", ar: "العفرون" },
+    { fr: "Guerouaou", zip: "09021", ar: "قرواو" },
+    { fr: "Hammam Melouane", zip: "09022", ar: "حمام ملوان" },
+    { fr: "Larbaa", zip: "09006", ar: "الأربعاء" },
+    { fr: "Meftah", zip: "09007", ar: "مفتاح" },
+    { fr: "Mouzaïa", zip: "09008", ar: "موزاية" },
+    { fr: "Oued Djer", zip: "09014", ar: "وادي جر" },
+    { fr: "Oued El Alleug", zip: "09010", ar: "وادي العلايق" },
+    { fr: "Ouled Yaïch", zip: "09011", ar: "أولاد يعيش" },
+    { fr: "Souhane", zip: "09023", ar: "صوحان" },
+    { fr: "Soumaa", zip: "09017", ar: "الصومعة" },
+    { fr: "Oued Yaïch (Sidi Sarhane)", zip: "09011", ar: "أولاد يعيش" }
+];

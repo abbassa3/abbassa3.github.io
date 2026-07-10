@@ -1,0 +1,27 @@
+﻿// Liste complète des 24 communes de la Wilaya d'El Tarf (36)
+var communesWilayaActive = [
+    { fr: "Aïn El Assel", zip: "36006", ar: "عين العسل" },
+    { fr: "Aïn Kerma", zip: "36015", ar: "عين الكرمة" },
+    { fr: "Asfour", zip: "36018", ar: "عصفور" },
+    { fr: "Ben M'Hidi", zip: "36002", ar: "بن مهيدي" },
+    { fr: "Berrihane", zip: "36013", ar: "بريحان" },
+    { fr: "Besbes", zip: "36005", ar: "البسباس" },
+    { fr: "Bougous", zip: "36021", ar: "بوڤوس" },
+    { fr: "Bouhadjar", zip: "36003", ar: "بوحجار" },
+    { fr: "Bouteldja", zip: "36004", ar: "بوثلجة" },
+    { fr: "Chebaita Mokhtar", zip: "36016", ar: "شبيطة مختار" },
+    { fr: "Chefia", zip: "36023", ar: "الشافية" },
+    { fr: "Chihani", zip: "36017", ar: "الشيحاني" },
+    { fr: "Drean", zip: "36001", ar: "الذرعان" },
+    { fr: "Echatt", zip: "36010", ar: "الشط" },
+    { fr: "El Aioun", zip: "36009", ar: "العيون" },
+    { fr: "El Kala", zip: "36007", ar: "القالة" },
+    { fr: "El Tarf", zip: "36000", ar: "الطارف" },
+    { fr: "Hammama (Hammam Beni Salah)", zip: "36022", ar: "حمام بني صالح" },
+    { fr: "Lac des Oiseaux", zip: "36011", ar: "بحيرة الطيور" },
+    { fr: "Oued Zitoun", zip: "36024", ar: "وادي الزيتون" },
+    { fr: "Ramlel Souk", zip: "36008", ar: "رمل السوق" },
+    { fr: "Souarekh", zip: "36012", ar: "السوارخ" },
+    { fr: "Zerit (Zerizer)", zip: "36014", ar: "زريزر" },
+    { fr: "Zitouna", zip: "36020", ar: "الزيتونة" }
+];

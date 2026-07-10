@@ -1,0 +1,27 @@
+﻿// Liste complète des 24 communes de la Wilaya de Laghouat (03)
+var communesWilayaActive = [
+    { fr: "Aflou", zip: "03001", ar: "أفلو" },
+    { fr: "Aïn Madhi", zip: "03002", ar: "عين ماضي" },
+    { fr: "Aïn Sidi Ali", zip: "03019", ar: "عين سيدي علي" },
+    { fr: "Beidha", zip: "03020", ar: "البيضاء" },
+    { fr: "Benacer Benchohra", zip: "03007", ar: "بن ناصر بن شهرة" },
+    { fr: "Brida", zip: "03011", ar: "بريدة" },
+    { fr: "El Assafia", zip: "03015", ar: "العسافية" },
+    { fr: "El Ghicha", zip: "03004", ar: "الغيشة" },
+    { fr: "El Haouaita", zip: "03018", ar: "الحويطة" },
+    { fr: "Gueltat Sidi Saâd", zip: "03010", ar: "قلتة سيدي سعد" },
+    { fr: "Hadj Mechri", zip: "03012", ar: "الحاج مشري" },
+    { fr: "Hassi Delaa", zip: "03009", ar: "حاسي الدلاعة" },
+    { fr: "Hassi R'Mel", zip: "03003", ar: "حاسي الرمل" },
+    { fr: "Kheneg", zip: "03014", ar: "الخنق" },
+    { fr: "Ksar El Hirane", zip: "03005", ar: "قصر الحيران" },
+    { fr: "Laghouat", zip: "03000", ar: "الأغواط" },
+    { fr: "M'Gharef", zip: "03023", ar: "المخارف" },
+    { fr: "Oued M'Zi", zip: "03016", ar: "وادي مـزي" },
+    { fr: "Oued Morra", zip: "03006", ar: "وادي مرة" },
+    { fr: "Sebgag", zip: "03021", ar: "سبقاق" },
+    { fr: "Sidi Bouzid", zip: "03008", ar: "سيدي بوزيد" },
+    { fr: "Sidi Makhlouf", zip: "03013", ar: "سيدي مخلوف" },
+    { fr: "Tadjemout", zip: "03017", ar: "تاجموت" },
+    { fr: "Taouiala", zip: "03022", ar: "تاويالة" }
+];
