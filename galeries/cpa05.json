@@ -1,0 +1,617 @@
+﻿[
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_atedeles_01.webp",
+        "ar": "الشارع الكبير بمدينة عين تادلس",
+        "fr": "La grande rue d'Aïn Tédelès"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_atedeles_02.webp",
+        "ar": "مدرسة البنات بمدينة عين تادلس",
+        "fr": "L'école de filles la coupole d'Aïn Tédelès"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_atedeles_03.webp",
+        "ar": "نصب بمدينة عين تادلس",
+        "fr": "Un monument d'Aïn Tédelès"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_atedeles_04.webp",
+        "ar": "الشارع الكبير بمدينة عين تادلس",
+        "fr": "La grande rue d'Aïn Tédelès"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_atedeles_05.webp",
+        "ar": "شارع المحطة بمدينة عين تادلس",
+        "fr": "La rue de la gare d'Aïn Tédelès vers 1900"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_atedeles_06.webp",
+        "ar": "الساحة الكبيرة بمدينة عين تادلس",
+        "fr": "La grande place d'Aïn Tédelès"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_atedeles_07.webp",
+        "ar": "منظر لمدينة عين تادلس من الجو",
+        "fr": "Aïn Tédelès vue du ciel"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_atedeles_08.webp",
+        "ar": "محطة القطار بمدينة عين تادلس",
+        "fr": "La gare d'Aïn Tédelès"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_atedeles_09.webp",
+        "ar": "مقر الدرك بمدينة عين تادلس",
+        "fr": "La gendarmerie d'Aïn Tédelès"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_atedeles_10.webp",
+        "ar": "الشارع الكبير بمدينة عين تادلس",
+        "fr": "La grande rue d'Aïn Tédelès"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_atedeles_11.webp",
+        "ar": "مدرسة البنين بعين تادلس",
+        "fr": "L'école des garçons l'Abeille à Aïn Tédelès"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_atedeles_12.webp",
+        "ar": "حوض الشرب بمدينة عين تادلس",
+        "fr": "L'abreuvoir d'Aïn Tédelès"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_atedeles_13.webp",
+        "ar": "دار البلدية القديمة بمدينة عين تادلس",
+        "fr": "Ancienne mairie d'Aïn Tédelès"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_atedeles_14.webp",
+        "ar": "مدرسة البنات بمدينة عين تادلس",
+        "fr": "L'école de filles la coupole d'Aïn Tédelès"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_atedeles_15.webp",
+        "ar": "دار البلدية القديمة بمدينة عين تادلس",
+        "fr": "Ancienne mairie d'Aïn Tédelès"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_atedeles_16.webp",
+        "ar": "مركز مدينة عين تادلس",
+        "fr": "Le centre-ville d'Aïn Tédelès"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_atedeles_17.webp",
+        "ar": "التأمينات الاجتماعية بمدينة عين تادلس",
+        "fr": "Les assurances sociales agricoles d'Aïn Tédelès"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_atedeles_18.webp",
+        "ar": "الشارع الرئيسي بمدينة عين تادلس",
+        "fr": "La rue principale d'Aïn Tédelès"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_atedeles_19.webp",
+        "ar": "حديقة المدرسة الجديدة بمدينة عين تادلس",
+        "fr": "Le jardin de l'école nouvelle d'Aïn Tédelès"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_atedeles_20.webp",
+        "ar": "حديقة مدرسة البنات بمدينة عين تادلس",
+        "fr": "Le jardin de l'école des filles à Aïn Tédelès"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_atedeles_21.webp",
+        "ar": "فناء المدرسة الجديدة بمدينة عين تادلس",
+        "fr": "La cour de l'école nouvelle à Aïn Tédelès"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_atedeles_22.webp",
+        "ar": "الساحة الكبيرة بمدينة عين تادلس",
+        "fr": "La grande place d'Aïn Tédelès"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_atedeles_23.webp",
+        "ar": "الكنيسة القديمة بمدينة عين تادلس",
+        "fr": "Ancienne église d'Aïn Tédelès"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_atedeles_24.webp",
+        "ar": "محطة القطار بمدينة عين تادلس",
+        "fr": "La gare d'Aïn Tédelès"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_atedeles_25.webp",
+        "ar": "دار بلدية عين تادلس",
+        "fr": "La mairie d'Aïn Tédelès"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_atedeles_26.webp",
+        "ar": "محطة القطار بمدينة عين تادلس",
+        "fr": "La gare d'Aïn Tédelès"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_atedeles_27.webp",
+        "ar": "مقر الدرك بمدينة عين تادلس",
+        "fr": "La gendarmerie d'Aïn Tédelès"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_atedeles_28.webp",
+        "ar": "الشارع الكبير بمدينة عين تادلس",
+        "fr": "La grande rue d'Aïn Tédelès"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_atedeles_29.webp",
+        "ar": "مدرسة البنين لمدينة عين تادلس",
+        "fr": "L'école de garçons d'Aïn Tédelès"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_atedeles_30.webp",
+        "ar": "الكنيسة القديمة لمدينة عين تادلس",
+        "fr": "Ancienne église d'Aïn Tédelès"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_atedeles_31.webp",
+        "ar": "محطة القطار بمدينة عين تادلس",
+        "fr": "La gare d'Aïn Tédelès"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_atedeles_32.webp",
+        "ar": "نافورة ساحة مدينة عين تادلس",
+        "fr": "Le jet d'eau de la place d'Aïn Tédelès"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_atedeles_33.webp",
+        "ar": "نصب بمدينة عين تادلس",
+        "fr": "Un monument d'Aïn Tédelès"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_atedeles_34.webp",
+        "ar": "ساحة مدينة عين تادلس",
+        "fr": "La place d'Aïn Tédelès"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_atedeles_35.webp",
+        "ar": "حي بجنوب مدينة عين تادلس",
+        "fr": "Un quartier du sud d'Aïn Tédelès"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_atedeles_36.webp",
+        "ar": "مقر الدرك بمدينة عين تادلس",
+        "fr": "La gendarmerie d'Aïn Tédelès"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_atedeles_37.webp",
+        "ar": "الحديقة العامة لمدينة عين تادلس",
+        "fr": "Le jardin public d'Aïn Tédelès"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_atedeles_38.webp",
+        "ar": "نافورة ساحة مدينة عين تادلس",
+        "fr": "Le jet d'eau de la place d'Aïn Tédelès"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_atedeles_39.webp",
+        "ar": "دار بلدية عين تادلس",
+        "fr": "La mairie d'Aïn Tédelès"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_atedeles_40.webp",
+        "ar": "الحديقة العامة لمدينة عين تادلس",
+        "fr": "Le jardin public d'Aïn Tédelès"
+    },
+	{
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_atedeles_41.webp",
+        "ar": "سوق مدينة عين تادلس",
+        "fr": "Le marché d'Aïn Tédelès"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_atedeles_42.webp",
+        "ar": "الكنيسة القديمة لمدينة عين تادلس",
+        "fr": "Ancienne église d'Aïn Tédelès"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_atedeles_43.webp",
+        "ar": "ساحة مدينة عين تادلس",
+        "fr": "La place d'Aïn Tédelès"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_atedeles_44.webp",
+        "ar": "الولي الصالح سيدي عبد الله بمدينة عين تادلس",
+        "fr": "Le marabout Sidi Abdallah à Aïn Tédelès"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_atedeles_45.webp",
+        "ar": "حديقة مدينة عين تادلس",
+        "fr": "Le square d'Aïn Tédelès"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_atedeles_46.webp",
+        "ar": "مدرسة البنات بمدينة عين تادلس",
+        "fr": "L'école des filles à Aïn Tédelès"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_atedeles_47.webp",
+        "ar": "الكنيسة القديمة لمدينة عين تادلس",
+        "fr": "Ancienne église d'Aïn Tédelès"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_atedeles_48.webp",
+        "ar": "محطة القطار بمدينة عين تادلس",
+        "fr": "La gare d'Aïn Tédelès"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_atedeles_49.webp",
+        "ar": "ممر المحطة بمدينة عين تادلس",
+        "fr": "Allée de la gare d'Aïn Tédelès"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_atedeles_50.webp",
+        "ar": "الشارع الكبير بمدينة عين تادلس",
+        "fr": "La grande rue d'Aïn Tédelès"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_belattar_01.webp",
+        "ar": "مكتب بريد سيدي بلعطار",
+        "fr": "La poste de Sidi Belattar"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_boudin_01.webp",
+        "ar": "ساحة مدينة بودينار",
+        "fr": "La place de Boudinar"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_boudin_02.webp",
+        "ar": "الكنيسة القديمة بمدينة بودينار",
+        "fr": "Ancienne église de Boudinar"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_boudin_03.webp",
+        "ar": "منظر عام لمدينة بودينار",
+        "fr": "Vue générale de Boudinar"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_boudin_04.webp",
+        "ar": "مقهى بمدينة بودينار",
+        "fr": "Un café de Boudinar"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_bouguir_01.webp",
+        "ar": "الشارع الرئيسي بمدينة بوقيراط",
+        "fr": "La rue principale de Bouguirat"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_bouguir_02.webp",
+        "ar": "فيلا بمدينة بوقيراط",
+        "fr": "Une villa de Bouguirat"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_bouguir_03.webp",
+        "ar": "مركز تدريب الخيول في بوقيراط",
+        "fr": "La remonte de Bouguirat"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_bouguir_04.webp",
+        "ar": "الكنيسة القديمة بمدينة بوقيراط",
+        "fr": "Ancienne église de Bouguirat"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_bouguir_05.webp",
+        "ar": "ساحة مدينة بوقيراط",
+        "fr": "La place de Bouguirat"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_bouguir_06.webp",
+        "ar": "الكنيسة القديمة بمدينة بوقيراط",
+        "fr": "Ancienne église de Bouguirat"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_bouguir_07.webp",
+        "ar": "مقر الدرك بمدينة بوقيراط",
+        "fr": "La gendarmerie de Bouguirat"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_bouguir_08.webp",
+        "ar": "فندق بمدينة بوقيراط",
+        "fr": "Un hôtel de Bouguirat"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_bouguir_09.webp",
+        "ar": "مقر الدرك الوطني بمدينة بوقيراط",
+        "fr": "La gendarmerie de Bouguirat"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_bouguir_10.webp",
+        "ar": "شارع بمدينة بوقيراط",
+        "fr": "Un boulevard de Bouguirat"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_bouguir_11.webp",
+        "ar": "تلاميذ مدينة بوقيراط عام 1900",
+        "fr": "Les écoliers de Bouguirat en 1900"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_bouguir_12.webp",
+        "ar": "الكنيسة القديمة لمدينة بوقيراط",
+        "fr": "Ancienne église de Bouguirat"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_bouguir_13.webp",
+        "ar": "دار بلدينة بوقيراط",
+        "fr": "La mairie de Bouguirat"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_bouguir_14.webp",
+        "ar": "الولي الصالح سيدي الشارف في بوقيراط",
+        "fr": "Le marabout Sidi Charef à Bouguirat"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_bouguir_15.webp",
+        "ar": "زاوية الشيخ بن تكوك في بوقيراط",
+        "fr": "La zaouïa de Ben Tekkouk à Bouguirat"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_bouguir_16.webp",
+        "ar": "بريد مدينة بوقيراط",
+        "fr": "La poste de Bouguirat"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_bouguir_17.webp",
+        "ar": "الولي الصالح سيدي الشارف في بوقيراط",
+        "fr": "Le marabout Sidi Charef à Bouguirat"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_bouguir_18.webp",
+        "ar": "بريد مدينة بوقيراط",
+        "fr": "La poste de Bouguirat"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_bouguir_19.webp",
+        "ar": "ساحة دار بلدية بوقيراط",
+        "fr": "La place de la mairie de Bouguirat"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_bouguir_20.webp",
+        "ar": "الخان القديم بمدينة بوقيراط",
+        "fr": "L'ancien caravansérail de Bouguirat"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_bouguir_21.webp",
+        "ar": "نصب بمدينة بوقيراط",
+        "fr": "Un monument de Bouguirat"
+    },
+	{
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_fornaka_01.webp",
+        "ar": "شارع دار بلدية فرناكة",
+        "fr": "La rue de la mairie de Fornaka"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_fornaka_02.webp",
+        "ar": "شارع المحمدية بمدينة فرناكة",
+        "fr": "La rue de Mohammadia à Fornaka"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_fornaka_03.webp",
+        "ar": "بريد مدينة فرناكة",
+        "fr": "La poste de Fornaka"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_fornaka_04.webp",
+        "ar": "الشارع الرئيسي بمدينة فرناكة",
+        "fr": "La rue principale de Fornaka"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_fornaka_05.webp",
+        "ar": "قاعة الحفلات بمدينة فرناكة",
+        "fr": "La salle des fêtes de Fornaka"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_fornaka_06.webp",
+        "ar": "فيلا بمدينة فرناكة",
+        "fr": "Une villa de Fornaka"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_fornaka_07.webp",
+        "ar": "بريد مدينة فرناكة",
+        "fr": "La poste de Fornaka"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_fornaka_08.webp",
+        "ar": "الكنيسة القديمة بمدينة فرناكة",
+        "fr": "Ancienne église de Fornaka"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_fornaka_09.webp",
+        "ar": "بريد مدينة فرناكة",
+        "fr": "La poste de Fornaka"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_hadjadj_01.webp",
+        "ar": "بريد مدينة حجاج",
+        "fr": "La poste de Hadjadj"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_hadjadj_02.webp",
+        "ar": "مدارس مدينة حجاج",
+        "fr": "Les écoles de Hadjadj"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_hadjadj_03.webp",
+        "ar": "الكنيسة القديمة بمدينة حجاج",
+        "fr": "Ancienne église de Hadjadj"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_hadjadj_04.webp",
+        "ar": "بريد مدينة حجاج",
+        "fr": "La poste de Hadjadj"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_hadjadj_05.webp",
+        "ar": "حي بمدينة حجاج",
+        "fr": "Un quartier de Hadjadj"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_khadra_01.webp",
+        "ar": "حديقة بمدينة خضرة",
+        "fr": "Un jardin de Khadra"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_khadra_02.webp",
+        "ar": "مقر الدرك الوطني بمدينة خضرة",
+        "fr": "La gendarmerie de Khadra"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_khadra_03.webp",
+        "ar": "ساحة مدينة خضرة",
+        "fr": "La place de Khadra"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_khadra_04.webp",
+        "ar": "الشارع الرئيسي بمدينة خضرة",
+        "fr": "La rue principale de Khadra"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_khadra_05.webp",
+        "ar": "مدارس مدينة خضرة",
+        "fr": "Les écoles de Khadra"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_khadra_06.webp",
+        "ar": "الكنيسة القديمة بمدينة خضرة",
+        "fr": "Ancienne église de Khadra"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_khadra_07.webp",
+        "ar": "قاعة الحفلات بمدينة خضرة",
+        "fr": "La salle des fêtes de Khadra"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_khrabch_01.webp",
+        "ar": "نظرة على قرية الخرابشة",
+        "fr": "Vue du village Khrabcha"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_mamech_01.webp",
+        "ar": "شارع المحمدية بمدينة حاسي مماش",
+        "fr": "La rue de Mohammadia à Hassi Mamèche"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_mamech_02.webp",
+        "ar": "الشارع الكبير بمدينة حاسي مماش",
+        "fr": "La grande rue de Hassi Mamèche"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_mamech_03.webp",
+        "ar": "منظر عام لمدينة حاسي مماش",
+        "fr": "Vue générale de Hassi Mamèche"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_mamech_04.webp",
+        "ar": "مخرج بلدية حاسي مماش",
+        "fr": "La sortie du village de Hassi Mamèche"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_mamech_05.webp",
+        "ar": "الكنيسة القديمة بمدينة حاسي مماش",
+        "fr": "Ancienne église de Hassi Mamèche"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_mamech_06.webp",
+        "ar": "الشارع الكبير بمدينة حاسي مماش",
+        "fr": "La grande rue de Hassi Mamèche"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_mamech_07.webp",
+        "ar": "فيلات مدينة حاسي مماش",
+        "fr": "Les villas de Hassi Mamèche"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_mamech_08.webp",
+        "ar": "ساحة مدينة حاسي مماش",
+        "fr": "La place de Hassi Mamèche"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_mamech_09.webp",
+        "ar": "دار بلدية حاسي مماش",
+        "fr": "La mairie de Hassi Mamèche"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_mamech_10.webp",
+        "ar": "مدرسة البنين بمدينة حاسي مماش",
+        "fr": "L'école de garçons à Hassi Mamèche"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_mamech_11.webp",
+        "ar": "دار بلدية حاسي مماش",
+        "fr": "La mairie de Hassi Mamèche"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_mamech_12.webp",
+        "ar": "الحديقة العامة لمدينة حاسي مماش",
+        "fr": "Le jardin public de Hassi Mamèche"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_mamech_13.webp",
+        "ar": "محطة القطار بمدينة حاسي مماش",
+        "fr": "La gare de Hassi Mamèche"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_mamech_14.webp",
+        "ar": "قاعة الحفلات بمدينة حاسي مماش",
+        "fr": "La salle des fêtes de Hassi Mamèche"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_mamech_15.webp",
+        "ar": "الكنيسة القديمة لمدينة حاسي مماش",
+        "fr": "Ancienne église de Hassi Mamèche"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_mamech_16.webp",
+        "ar": "مدرسة بمدينة حاسي مماش",
+        "fr": "Une école de Hassi Mamèche"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_mamech_17.webp",
+        "ar": "دار بلدية حاسي مماش",
+        "fr": "La mairie de Hassi Mamèche"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_mamech_18.webp",
+        "ar": "بريد مدينة حاسي مماش",
+        "fr": "La poste de Hassi Mamèche"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_mamech_19.webp",
+        "ar": "ساحة الكنيسة بمدينة حاسي مماش",
+        "fr": "La place d''église de Hassi Mamèche"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_mamech_20.webp",
+        "ar": "دار بلدية حاسي مماش",
+        "fr": "La mairie de Hassi Mamèche"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_mamech_21.webp",
+        "ar": "الشارع الرئيسي بمدينة حاسي مماش",
+        "fr": "La rue principale de Hassi Mamèche"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_mamech_22.webp",
+        "ar": "محطة القطار بمدينة حاسي مماش",
+        "fr": "La gare de Hassi Mamèche"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_mamech_23.webp",
+        "ar": "الكنيسة القديمة بمدينة حاسي مماش",
+        "fr": "Ancienne église de Hassi Mamèche"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_mamech_24.webp",
+        "ar": "الشارع الرئيسي بمدينة حاسي مماش",
+        "fr": "La rue principale de Hassi Mamèche"
+    },
+    {
+        "url": "https://essour.files.wordpress.com/2023/01/ca27_mamech_25.webp",
+        "ar": "فيلا بمدينة حاسي مماش",
+        "fr": "Une villa à Hassi Mamèche"
+    }
+]
