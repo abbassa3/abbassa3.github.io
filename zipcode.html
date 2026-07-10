@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Postal codes of the wilayas of Algeria: Complete list</title>
+  <meta name="description" content="Quickly find the postal code for every wilaya and commune in Algeria. A complete, reliable, and optimized database for your searches.">
+  <meta name="keywords" content="Postal codes Algeria, List of wilayas (provinces) of Algeria, Municipal postal codes, Algerian postal codes, Postal code search">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/favicon.ico">
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Ancre invisible pour le retour en haut de page -->
+<div id="scrolltop"></div>
+
+<!-- #wrap : Conteneur principal du site -->
+<div id="wrap">
+    
+    <header>
+        <!-- Bannière principale -->
+        <div id="banner">
+            <a href="index.html">
+                <img src="images/banner-abbassa.jpg" alt="Pr Mohammed Abbassa - Back to Home">
+            </a>
+        </div>
+        
+        <!-- Titre principal masqué (SEO / Accessibilité) -->
+        <h1>Pr Mohammed Abbassa / د. محمد عباسة</h1>
+        
+        <!-- Menu de navigation Supérieur -->
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="articles.html">Articles</a>
+            <a href="links.html">Links</a>
+            <a href="abbassa-en.html">Profile</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+</header>
+    <!-- Bouton pour descendre directement en bas de page -->
+    <div class="scrolldown"><a href="#scrolldown">ꜛ</a></div>
+
+<!-- #main : Zone de contenu principal (Page d'erreur 404) -->
+<main id="content">
+	        <h2>The postal codes of the wilayas of Algeria</h2>
+            <p class="desc" lang="ar" dir="rtl">الرمز البريدي لولايات الجزائر</p>
+			
+            <hr class="separator">
+
+  <section class="abbassa-postal-wrapper"> 
+    <div class="abbassa-filter-zone"> 
+        <div class="abbassa-row"> 
+            <div class="abbassa-group"> 
+                <label for="wselect">Wilaya / ولاية :</label> 
+                <select id="wselect" onchange="chargerScriptWilaya()"></select> 
+            </div> 
+            <div class="abbassa-group"> 
+                <label for="sinput">Recherche locale / بحث :</label> 
+                <input type="text" id="sinput" onkeyup="filtrerDonnees()" placeholder="commune, code, بلدية..."> 
+            </div> 
+        </div> 
+    </div> 
+    <div class="table-responsive-container"> 
+        <table class="abbassa-table"> 
+            <thead> 
+                <tr> 
+                    <th style="width: 40%;">Localité / Commune</th> 
+                    <th style="width: 20%; text-align: center;">Code postal</th> 
+                    <th style="width: 40%; text-align: right;">البلدية / المكان</th> 
+                </tr> 
+            </thead> 
+            <tbody id="tablebody"></tbody> 
+        </table> 
+    </div> 
+            <hr class="separator">
+			
+  </section>
+</main><!-- / #main -->
+
+    <!-- Pied de page / Footer -->
+    <footer>
+        <!-- Liens Réseaux Sociaux -->
+        <div class="media">
+            <div class="media-buttons">
+                <a href="https://www.facebook.com/abbassa3" class="link facebook" target="_blank" title="Facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://x.com/abbassa27" class="link twitter-x" target="_blank" title="X (Twitter)"><i class="bx bxl-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/mohammed-abbassa-588434309" class="link linkedin" target="_blank" title="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://abbassa.wordpress.com/" class="link wordpress" target="_blank" title="Wordpress Blog"><i class="bx bxl-wordpress"></i></a>
+            </div>
+        </div>
+        
+        <!-- Menu de navigation Inférieur -->
+        <nav class="menu">
+            <a href="photos.html">Gallery</a>
+            <a href="latlong.html">Lat & long</a>
+			<a href="zipcode.html" class="active">Postal code</a>
+            <a href="prayers.html">Prayers</a>
+        </nav>
+        
+        <!-- Mention de Copyright -->
+        <p class="copy">&copy; 2026 - Designed by Prof. Mohammed Abbassa</p>
+    </footer>
+
+    <!-- Bouton de retour en haut de page -->
+    <div class="scrolltop"><a href="#scrolltop">ꜛ</a></div>
+
+</div><!-- / wrap -->
+
+<!-- Ancre invisible pour marquer le bas de page -->
+<div id="scrolldown"></div>
+
+<style>
+    .abbassa-postal-wrapper { max-width: 900px; width: 100%; margin: 20px auto; font-family: 'Lucida Sans Unicode', 'Sahl Naskh', Tahoma, Sans-serif; color: #333; box-sizing: border-box; padding: 10px; font-size: 17px; }
+    .btn-link-index { display: inline-block; padding: 8px 16px; background-color: #0073aa; color: #ffffff; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px; }
+    .abbassa-filter-zone { background-color: #f9f9f9; padding: 15px; border-radius: 5px; border: 1px solid #eee; margin-bottom: 20px; }
+    .abbassa-row { display: flex; gap: 15px; flex-wrap: wrap; }
+    .abbassa-group { flex: 1; min-width: 250px; display: flex; flex-direction: column; gap: 5px; }
+    .abbassa-group label { font-weight: bold; font-size: 15px; }
+    .abbassa-group select, .abbassa-group input { padding: 10px; font-size: 16px; border-radius: 4px; border: 1px solid #ccc; width: 100%; box-sizing: border-box; }
+    .table-responsive-container { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .abbassa-table { width: 100%; border-collapse: collapse; margin-top: 5px; table-layout: fixed; }
+    .abbassa-table th, .abbassa-table td { border: 1px solid #ddd; padding: 12px; text-align: left; word-wrap: break-word; }
+    .abbassa-table th { background-color: #f4f4f4; font-weight: bold; }
+    .abbassa-table td.arabic-cell { text-align: right; font-size: 1.1em; }
+    .abbassa-table tr:nth-child(even) { background-color: #fafafa; }
+    .abbassa-zip { font-family: monospace; font-weight: bold; color: #1a5a96; }
+</style>
+
+<script>
+// 1. Liste complète avec les noms séparés pour le français et l'arabe
+const lesWilayas = [
+    { id: "01", fr: "01 - Adrar", nameFr: "Adrar", nameAr: "أدرار" },
+    { id: "02", fr: "02 - Chlef", nameFr: "Chlef", nameAr: "الشلف" },
+    { id: "03", fr: "03 - Laghouat", nameFr: "Laghouat", nameAr: "الأغواط" },
+    { id: "04", fr: "04 - Oum El Bouaghi", nameFr: "Oum El Bouaghi", nameAr: "أم البواقي" },
+    { id: "05", fr: "05 - Batna", nameFr: "Batna", nameAr: "باتنة" },
+    { id: "06", fr: "06 - Béjaïa", nameFr: "Béjaïa", nameAr: "بجاية" },
+    { id: "07", fr: "07 - Biskra", nameFr: "Biskra", nameAr: "بسكرة" },
+    { id: "08", fr: "08 - Béchar", nameFr: "Béchar", nameAr: "بشار" },
+    { id: "09", fr: "09 - Blida", nameFr: "Blida", nameAr: "البليدة" },
+    { id: "10", fr: "10 - Bouira", nameFr: "Bouira", nameAr: "البويرة" },
+    { id: "11", fr: "11 - Tamanrasset", nameFr: "Tamanrasset", nameAr: "تمنراست" },
+    { id: "12", fr: "12 - Tébessa", nameFr: "Tébessa", nameAr: "تبسة" },
+    { id: "13", fr: "13 - Tlemcen", nameFr: "Tlemcen", nameAr: "تلمسان" },
+    { id: "14", fr: "14 - Tiaret", nameFr: "Tiaret", nameAr: "تيارت" },
+    { id: "15", fr: "15 - Tizi Ouzou", nameFr: "Tizi Ouzou", nameAr: "تيزي وزو" },
+    { id: "16", fr: "16 - Alger", nameFr: "Alger", nameAr: "الجزائر" },
+    { id: "17", fr: "17 - Djelfa", nameFr: "Djelfa", nameAr: "الجلفة" },
+    { id: "18", fr: "18 - Jijel", nameFr: "Jijel", nameAr: "جيجل" },
+    { id: "19", fr: "19 - Sétif", nameFr: "Sétif", nameAr: "سطيف" },
+    { id: "20", fr: "20 - Saïda", nameFr: "Saïda", nameAr: "سعيدة" },
+    { id: "21", fr: "21 - Skikda", nameFr: "Skikda", nameAr: "سكيكدة" },
+    { id: "22", fr: "22 - Sidi Bel Abbès", nameFr: "Sidi Bel Abbès", nameAr: "سيدي بلعباس" },
+    { id: "23", fr: "23 - Annaba", nameFr: "Annaba", nameAr: "عنابة" },
+    { id: "24", fr: "24 - Guelma", nameFr: "Guelma", nameAr: "قالمة" },
+    { id: "25", fr: "25 - Constantine", nameFr: "Constantine", nameAr: "قسنطينة" },
+    { id: "26", fr: "26 - Médéa", nameFr: "Médéa", nameAr: "المدية" },
+    { id: "27", fr: "27 - Mostaganem", nameFr: "Mostaganem", nameAr: "مستغانم" },
+    { id: "28", fr: "28 - M'Sila", nameFr: "M'Sila", nameAr: "المسيلة" },
+    { id: "29", fr: "29 - Mascara", nameFr: "Mascara", nameAr: "معسكر" },
+    { id: "30", fr: "30 - Ouargla", nameFr: "Ouargla", nameAr: "ورقلة" },
+    { id: "31", fr: "31 - Oran", nameFr: "Oran", nameAr: "وهران" },
+    { id: "32", fr: "32 - El Bayadh", nameFr: "El Bayadh", nameAr: "البيض" },
+    { id: "33", fr: "33 - Illizi", nameFr: "Illizi", nameAr: "إليزي" },
+    { id: "34", fr: "34 - Bordj Bou Arréridj", nameFr: "Bordj Bou Arréridj", nameAr: "برج بوعريريج" },
+    { id: "35", fr: "35 - Boumerdès", nameFr: "Boumerdès", nameAr: "بومرداس" },
+    { id: "36", fr: "36 - El Tarf", nameFr: "El Tarf", nameAr: "الطارف" },
+    { id: "37", fr: "37 - Tindouf", nameFr: "Tindouf", nameAr: "تندوف" },
+    { id: "38", fr: "38 - Tissemsilt", nameFr: "Tissemsilt", nameAr: "تيسمسيلت" },
+    { id: "39", fr: "39 - El Oued", nameFr: "El Oued", nameAr: "الوادي" },
+    { id: "40", fr: "40 - Khenchela", nameFr: "Khenchela", nameAr: "خنشلة" },
+    { id: "41", fr: "41 - Souk Ahras", nameFr: "Souk Ahras", nameAr: "سوق أهراس" },
+    { id: "42", fr: "42 - Tipaza", nameFr: "Tipaza", nameAr: "تيبازة" },
+    { id: "43", fr: "43 - Mila", nameFr: "Mila", nameAr: "ميلة" },
+    { id: "44", fr: "44 - Aïn Defla", nameFr: "Aïn Defla", nameAr: "عين الدفلى" },
+    { id: "45", fr: "45 - Naâma", nameFr: "Naâma", nameAr: "نعامة" },
+    { id: "46", fr: "46 - Aïn Témouchent", nameFr: "Aïn Témouchent", nameAr: "عين تموشنت" },
+    { id: "47", fr: "47 - Ghardaïa", nameFr: "Ghardaïa", nameAr: "غرداية" },
+    { id: "48", fr: "48 - Relizane", nameFr: "Relizane", nameAr: "غليزان" },
+    { id: "49", fr: "49 - Timimoun", nameFr: "Timimoun", nameAr: "تيميمون" },
+    { id: "50", fr: "50 - B. Badji Mokhtar", nameFr: "Bordj Badji Mokhtar", nameAr: "برج باجي مختار" },
+    { id: "51", fr: "51 - Ouled Djellal", nameFr: "Ouled Djellal", nameAr: "أولاد جلال" },
+    { id: "52", fr: "52 - Béni Abbès", nameFr: "Béni Abbès", nameAr: "بني عباس" },
+    { id: "53", fr: "53 - In Salah", nameFr: "In Salah", nameAr: "عين صالح" },
+    { id: "54", fr: "54 - In Guezzam", nameFr: "In Guezzam", nameAr: "عين قزام" },
+    { id: "55", fr: "55 - Touggourt", nameFr: "Touggourt", nameAr: "تقرت" },
+    { id: "56", fr: "56 - Djanet", nameFr: "Djanet", nameAr: "جانت" },
+    { id: "57", fr: "57 - El M'Ghair", nameFr: "El M'Ghair", nameAr: "المغير" },
+    { id: "58", fr: "58 - El Meniaa", nameFr: "El Meniaa", nameAr: "المنيعة" }
+];
+
+// Initialisation au démarrage
+window.addEventListener('DOMContentLoaded', () => {
+    const select = document.getElementById('wselect');
+    if (select) {
+        select.innerHTML = "";
+        lesWilayas.forEach(w => {
+            // Affiche "27 - Mostaganem | مستغانم" dans le menu déroulant
+            select.add(new Option(`${w.fr} | ${w.nameAr}`, w.id));
+        });
+        select.value = "27"; // Mostaganem par défaut
+        chargerScriptWilaya();
+    }
+});
+
+// Le cœur du système : charge à la demande le fichier de la wilaya choisie
+function chargerScriptWilaya() {
+    const id = document.getElementById('wselect').value;
+    const w = lesWilayas.find(item => item.id === id);
+    if (!w) return;
+
+    // Mise à jour bilingue des titres H2 avec les noms propres purs
+    
+    // Supprime l'ancien script de wilaya chargé s'il existe
+    const ancienScript = document.getElementById('script-wilaya-dynamique');
+    if (ancienScript) ancienScript.remove();
+
+    // Crée une balise script dynamique (ex: "data/27.js")
+    const script = document.createElement('script');
+    script.id = 'script-wilaya-dynamique';
+    script.src = `data/${id}.js`;
+    
+    // Dès que le fichier charge, on affiche son tableau
+    script.onload = () => {
+        document.getElementById('sinput').value = ""; // Vide la recherche précédente
+        genererHtmlTableau(communesWilayaActive);
+    };
+    
+    document.body.appendChild(script);
+}
+
+// Génère l'affichage du tableau
+function genererHtmlTableau(liste) {
+    const tbody = document.getElementById('tablebody');
+    if (!tbody) return;
+    tbody.innerHTML = "";
+    
+    if (!liste || liste.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="3" style="text-align:center; color:#888;">Mise à jour en cours.</td></tr>';
+        return;
+    }
+
+    const fragment = document.createDocumentFragment(); 
+    liste.forEach(c => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+            <td>${c.fr}</td>
+            <td style="text-align: center;" class="abbassa-zip">${c.zip}</td>
+            <td class="arabic-cell" dir="rtl">${c.ar}</td>
+        `;
+        fragment.appendChild(tr);
+    });
+    tbody.appendChild(fragment);
+}
+
+// Recherche instantanée en mémoire
+function filtrerDonnees() {
+    const valeur = document.getElementById('sinput').value.toLowerCase().trim();
+    if (valeur === "") {
+        genererHtmlTableau(communesWilayaActive);
+        return;
+    }
+    
+    const resultat = communesWilayaActive.filter(c => 
+        c.fr.toLowerCase().includes(valeur) || 
+        c.zip.includes(valeur) || 
+        c.ar.includes(valeur)
+    );
+    genererHtmlTableau(resultat);
+}
+</script>
+
+</body>
+</html>

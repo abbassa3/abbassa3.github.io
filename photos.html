@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photos et cartes postales de la Wilaya de Mostaganem</title>
+  <meta name="description" content="Algerian history through our exclusive collection of old photos, rare engravings, Orientalist paintings and philatelic cards.">
+  <meta name="keywords" content="Orientalist paintings of Algeria, vintage postcards of Algeria, historical Algerian engravings, Algerian philatelic collection, period photos of Algeria">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/favicon.ico">
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Ancre invisible pour le retour en haut de page -->
+<div id="scrolltop"></div>
+
+<!-- #wrap : Conteneur principal du site -->
+<div id="wrap">
+    
+    <header>
+        <!-- Bannière principale -->
+        <div id="banner">
+            <a href="index.html">
+                <img src="images/banner-abbassa.jpg" alt="Pr Mohammed Abbassa - Back to Home">
+            </a>
+        </div>
+        
+        <!-- Titre principal masqué (SEO / Accessibilité) -->
+        <h1>Pr Mohammed Abbassa / د. محمد عباسة</h1>
+        
+        <!-- Menu de navigation Supérieur -->
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="articles.html">Articles</a>
+            <a href="links.html">Links</a>
+            <a href="abbassa-en.html">Profile</a>
+            <a href="abbassa-en.html">Contact</a>
+        </nav>
+</header>
+    <!-- Bouton pour descendre directement en bas de page -->
+    <div class="scrolldown"><a href="#scrolldown">ꜛ</a></div>
+
+<!-- #main : Zone de contenu principal (Page d'erreur 404) -->
+
+<main class="diaporama-container content">
+        <section>
+            <h2>Photos et cartes postales de la wilaya de Mostaganem</h2>
+            <p class="desc" lang="ar" dir="rtl">صور وبطاقات بريدية لولاية مستغانم</p>
+			
+            <hr class="separator">
+        </section>
+    
+     <!-- 1. ZONE DE SÉLECTION DE LA COMMUNE (LES COMMUNES INCLUSES) -->
+    <div class="selector-zone" style="display: flex !important; justify-content: center !important; align-items: center !important; gap: 15px !important;">
+    
+    <!-- Texte FR à gauche -->
+    <label for="communeSelect" style="font-family: Arial, Tahoma, Sans-serif; font-size: 16px; color: #333; margin: 0;">Select :</label>
+        <select id="communeSelect" onchange="chargerGalerieCommune()">
+
+            <option value="cpa01" selected data-ar="مستغانم">27 - Photos anciennes 1</option> <!-- Sélectionné par défaut -->
+            <option value="cpa02">27 - Photos anciennes 2</option>
+            <option value="cpa03">27 - Photos anciennes 3</option>
+            <option value="cpa04">27 - Photos anciennes 4</option>
+            <option value="cpa05">27 - Photos anciennes 5</option>
+            <option value="cpa06">27 - Photos anciennes 6</option>
+            <option value="cpa07">27 - Photos anciennes 7</option>
+            <option value="cpm01">27 - Photos modernes 1</option>
+            <option value="cpm02">27 - Photos modernes 2</option>
+            <option value="cpm03">27 - Photos modernes 3</option>
+            <option value="cpm04">27 - Photos modernes 4</option>
+            <option value="cpm05">27 - Photos modernes 5</option>
+            <option value="pdc01">27 - Photos de classe 1</option>
+            <option value="pdc02">27 - Photos de classe 2</option>
+            <option value="pdc03">27 - Photos de classe 3</option>
+            <option value="pdc04">27 - Photos de classe 4</option>
+            <option value="pdc05">27 - Photos de classe 5</option>
+            <option value="pdc06">27 - Photos de classe 6</option>
+        </select>
+<!-- Texte AR à droite -->
+    <label for="communeSelect" style="font-family: 'Sahl Naskh', Tahoma, sans-serif; font-size: 17px; color: #333; direction: rtl; margin: 0;">اختر :</label>
+    </div>
+
+    <!-- 3. ZONE PRINCIPALE DU DIAPORAMA (FOND BLANC) -->
+    <div class="diaporama-main">
+        <!-- Compteur d'images -->
+        <div id="diapo-counter" class="diapo-counter">1 / --</div>
+
+        <!-- Zone d'affichage de la photo unique animée -->
+        <div class="diapo-slides-wrapper">
+            <div id="diapo-slide-box" class="diapo-slide-box">
+                <img id="diapo-img" src="" alt="Chargement de l'image...">
+                <div class="diapo-caption">
+                    <p id="caption-ar" class="caption-ar"></p>
+                    <p id="caption-fr" class="caption-fr"></p>
+                </div>
+            </div>
+        </div>
+        <!-- Flèches de direction bleues -->
+        <button id="prevBtn" class="diapo-arrow prev">&#10094;</button>
+        <button id="nextBtn" class="diapo-arrow next">&#10095;</button>
+    </div>
+</main><!-- / #main -->
+
+<!-- Filigrane élégant caché par défaut -->
+<div id="copyright-overlay" class="copyright-overlay">
+    © Pr Mohammed Abbassa / https://abbassa.wordpress.com
+</div>
+
+<ul style="font-family: 'Lucida Sans Unicode', Tahoma, Sans-serif;">
+    <li style="list-style: circle; font-weight: 600;">Photos et cartes postales anciennes :</li>
+    <li>Album 1, 2, 3, 4 : Mostaganem ville.</li>
+    <li>Album 5 : Ain Tédelès, Sidi Belattar, Ain Boudinar, Bouguirat, Fornaka, Hadjadj, Khadra, Hassi Mamèche.</li>
+    <li>Album 6 : Mazagran, Mesra, Aïn Nouissi, Ben Abdelmalek Ramdane, Petit Port, Salamandre, Sidi Ali.</li>
+    <li>Album 7 : Sirat, Sidi Lakhdar, Sour, Stidia, Tijdit, Kheireddine.</li>
+    <li style="list-style: circle; font-weight: 600; padding-top: 5px;">Photos et cartes postales modernes :</li>
+    <li>Album 1, 2 : Mostaganem ville.</li>
+    <li>Album 3 : Aïn Brahim, Achâacha, Aïn Tédelès, Sidi Belattar, Belhadri, Bouguirat, Fornaka, Hachasta, Hadjadj, Hassi Mamèche, Khadra, Mazagran, Mesra.</li>
+    <li>Album 4 : Aïn Nouissi, Ouled Boughalem, Oued el Kheir, Ben Abdelmalek Ramadane, Sablettes, Salamandre, Sayada, Sidi Ali, Sirat, Sidi Lakhdar.</li>
+    <li>Album 5 : Sour, Stidia, Tijdit, Kheireddine.</li>
+    <li style="list-style: circle; font-weight: 600; padding-top: 5px;">Photos de classe anciennes et modernes :</li>
+    <li>Album 1, 2, 3 : Mostaganem ville.</li>
+    <li>Album 4 : Mostaganem, Tijdit, Mazagran, Sidi Athmane, Sayada, Aïn Nouissi, El Mactaâ, Fornaka, Hassi Mameche, Aïn Sidi Cherif, Ouréah, Bouguirat, Mesra, Sirat, Touahria.</li>
+    <li>Album 5 : Aïn Boudinar, Aïn Tédelès, Oued el Kheir, Sidi Belattar, Kheireddine, Stidia, Khadra, Ouled Maâllah, Abdelmalek Ramdane, Sidi Ali, Sidi Lakhdar.</li>
+    <li>Album 6 : Sour.</li>
+</ul>
+
+    <!-- Pied de page / Footer -->
+    <footer>
+        <!-- Liens Réseaux Sociaux -->
+        <div class="media">
+            <div class="media-buttons">
+                <a href="https://www.facebook.com/abbassa3" class="link facebook" target="_blank" title="Facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://x.com/abbassa27" class="link twitter-x" target="_blank" title="X (Twitter)"><i class="bx bxl-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/mohammed-abbassa-588434309" class="link linkedin" target="_blank" title="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://abbassa.wordpress.com/" class="link wordpress" target="_blank" title="Wordpress Blog"><i class="bx bxl-wordpress"></i></a>
+            </div>
+        </div>
+        
+        <!-- Menu de navigation Inférieur -->
+        <nav class="menu">
+            <a href="photos.html" class="active">Gallery</a>
+            <a href="latlong.html">Lat & long</a>
+			<a href="zipcode.html">Postal code</a>
+            <a href="prayers.html">Prayers</a>
+        </nav>
+        
+        <!-- Mention de Copyright -->
+        <p class="copy">&copy; 2026 - Designed by Prof. Mohammed Abbassa</p>
+    </footer>
+
+    <!-- Bouton de retour en haut de page -->
+    <div class="scrolltop"><a href="#scrolltop">ꜛ</a></div>
+
+</div><!-- / wrap -->
+
+<!-- Ancre invisible pour marquer le bas de page -->
+<div id="scrolldown"></div>
+
+<style>
+
+/* ==========================================================================
+   STYLE DU DIAPORAMA INDÉPENDANT (MAX-WIDTH 900PX)
+   ========================================================================== */
+.diaporama-container {
+    max-width: 900px;
+    width: 100%;
+    margin: 30px auto;
+    font-family: 'Lucida Sans Unicode','Sahl Naskh', Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Zone du sélecteur de Wilaya */
+.selector-zone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+    width: 100%; /* S'assure que la zone occupe tout l'espace disponible */
+}
+
+.selector-zone select {
+    width: 280px;
+    height: 42px;
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    outline: none;
+    background-color: #ffffff;
+}
+
+/* Conteneur principal de la galerie (FOND BLANC) */
+.diaporama-main {
+    position: relative;
+    width: auto;
+    height: 660px; /* MODIFIABLE AU BESOIN */
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Compteur en haut à gauche */
+.diapo-counter {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #336699e6; /* Bleu #336699 demandé */
+    color: #ffffff;
+    padding: 5px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Enveloppe des diapositives */
+.diapo-slides-wrapper {
+    width: 100%;
+    height: 660px; /* Ajustez la hauteur selon votre design */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Une diapositive individuelle */
+.diapo-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease-in-out, visibility 0.4s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+/* Diapositive visible */
+.diapo-slide.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Ajustement des images */
+.diapo-slide img {
+    max-width: 100%;
+    max-height: 80%;
+    object-fit: contain;
+}
+
+/* Légendes */
+.diapo-caption {
+    text-align: center;
+    margin-top: 10px;
+}
+/* Centrage parfait de la photo */
+.diapo-slide-box img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+/* Flèches de navigation */
+.diapo-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    color: #336699;
+    border: 1px solid #cbd5e1;
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease;
+    z-index: 10;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.diapo-arrow:hover {
+    background: #336699;
+    color: #ffffff;
+    border-color: #336699;
+}
+.diapo-arrow.prev { left: 20px; }
+.diapo-arrow.next { right: 20px; }
+
+/* Description avec votre dégradé bleu #a4cce5 */
+.diapo-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, #a4cce5f2 0%, #a4cce5b3 60%, #a4cce500 100%);
+    color: #ffffff;
+    padding: 20px 10px 10px 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.diapo-caption p { margin: 4px 0; }
+.diapo-caption .caption-ar {
+    font-size: 16px;
+    font-weight: normal;
+    direction: rtl;
+    color: #404748;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+.diapo-caption .caption-fr {
+    font-size: 14px;
+    color: #404748;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* RESPONSIVE : Écrans de téléphones */
+@media (max-width: 768px) {
+    .diaporama-main { height: 450px; }
+    .diapo-arrow { width: 35px; height: 35px; font-size: 16px; }
+    .diapo-arrow.prev { left: 10px; }
+    .diapo-arrow.next { right: 10px; }
+    .diapo-caption { padding: 35px 15px 15px 15px; }
+}
+
+/* Positionnement du conteneur d'image pour le texte superposé */
+.diapo-slide-box {
+    position: relative; /* Indispensable pour centrer le copyright sur l'image */
+}
+
+/* Style de la signature élégante (Option moderne et épurée) */
+.copyright-overlay {
+    position: fixed; /* Fixé par rapport à l'écran global */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.95); /* Fond blanc pur semi-transparent */
+    color: #111; /* Texte sombre très lisible */
+    padding: 14px 28px;
+    border-radius: 4px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    white-space: nowrap;
+    z-index: 99999; /* S'affiche au-dessus de TOUT le contenu du site */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* Classe d'apparition progressive */
+.copyright-overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Sécurité globale sur tout le site (sélection et glisser-déposer) */
+body {
+    -webkit-user-select: none;  
+    -moz-user-select: none;     
+    -ms-user-select: none;      
+    user-select: none;          
+}
+
+img {
+    -webkit-user-drag: none;
+    -webkit-touch-callout: none;
+}
+
+</style>
+
+<script>
+
+// Variables globales de contrôle
+let photosCommune = [];
+let diapoIndex = 0;
+
+// Attachement des événements au chargement du DOM
+document.addEventListener("DOMContentLoaded", function () {
+    const prevBtn = document.getElementById("prevBtn");
+    const nextBtn = document.getElementById("nextBtn");
+    const select = document.getElementById("communeSelect");
+    
+    if (prevBtn) prevBtn.addEventListener("click", function () { changerPhoto(-1); });
+    if (nextBtn) nextBtn.addEventListener("click", function () { changerPhoto(1); });
+    
+    // Écoute le changement de commune pour charger la bonne galerie
+    if (select) select.addEventListener("change", chargerGalerieCommune);
+
+    // Lance automatiquement la galerie de la commune sélectionnée par défaut (Mostaganem)
+    chargerGalerieCommune();
+});
+
+// Système de protection contre le vol de contenu
+document.addEventListener("DOMContentLoaded", function () {
+    const copyrightOverlay = document.getElementById("copyright-overlay");
+    let copyrightTimeout;
+    let touchTimeout;
+
+    if (copyrightOverlay) {
+        function declencherCopyrightGlobal(e) {
+            e.preventDefault();
+            copyrightOverlay.classList.add("show");
+            clearTimeout(copyrightTimeout);
+            copyrightTimeout = setTimeout(function () {
+                copyrightOverlay.classList.remove("show");
+            }, 2500);
+        }
+
+        document.addEventListener("contextmenu", declencherCopyrightGlobal);
+
+        document.addEventListener("touchstart", function (e) {
+            touchTimeout = setTimeout(function () {
+                declencherCopyrightGlobal(e);
+            }, 500); 
+        }, { passive: false });
+
+        document.addEventListener("keydown", function (e) {
+            function alerteFraude() {
+                copyrightOverlay.classList.add("show");
+                setTimeout(function () { copyrightOverlay.classList.remove("show"); }, 2500);
+            }
+
+            if (e.key === "F12") { e.preventDefault(); alerteFraude(); return false; }
+            if ((e.ctrlKey || e.metaKey) && e.shiftKey && (e.key === "I" || e.key === "i")) { e.preventDefault(); alerteFraude(); return false; }
+            if ((e.ctrlKey || e.metaKey) && (e.key === "U" || e.key === "u")) { e.preventDefault(); alerteFraude(); return false; }
+            if ((e.ctrlKey || e.metaKey) && (e.key === "S" || e.key === "s")) { e.preventDefault(); alerteFraude(); return false; }
+            if ((e.ctrlKey || e.metaKey) && (e.key === "C" || e.key === "c")) { e.preventDefault(); alerteFraude(); return false; }
+        });
+
+        document.addEventListener("touchmove", function () { clearTimeout(touchTimeout); });
+        document.addEventListener("touchend", function () { clearTimeout(touchTimeout); });
+    }
+});
+
+function chargerGalerieCommune() {
+    const select = document.getElementById("communeSelect");
+    if (!select || !select.value) return;
+    
+    const communeId = select.value;
+    const optionSelectionnee = select.options[select.selectedIndex];
+    const communeNomFr = optionSelectionnee.text.replace(/^[0-9\s-.]+/,"");
+    const communeNomAr = optionSelectionnee.getAttribute("data-ar") || "";
+    
+    const titleFr = document.getElementById("diapo-title-fr");
+    const titleAr = document.getElementById("diapo-title-ar");
+
+    if (titleFr) titleFr.textContent = "Photos de la commune de " + communeNomFr;
+    if (titleAr) titleAr.textContent = "صور بلدية " + communeNomAr;
+
+    fetch("galeries/" + communeId + ".json")
+        .then(function (response) { return response.json(); })
+        .then(function (data) {
+            photosCommune = data;
+            
+            // Reconstruit la structure HTML requise pour le CSS
+            genererSlidesHTML();
+            
+            if (photosCommune.length > 0) {
+                afficherPhotoDiapo(0);
+            } else {
+                gérerGalerieVide();
+            }
+        })
+        .catch(function (error) {
+            console.error("Erreur :", error);
+            gérerGalerieVide();
+        });
+}
+
+// Fonction nettoyée avec concaténation standard (plus aucun accent grave)
+function genererSlidesHTML() {
+    const wrapper = document.querySelector(".diapo-slides-wrapper");
+    if (!wrapper) return;
+
+    wrapper.innerHTML = ""; // Vide la galerie précédente
+
+    photosCommune.forEach(function (photo, index) {
+        const slide = document.createElement("div");
+        slide.className = "diapo-slide";
+        slide.id = "slide-" + index;
+
+        // Chaîne classique sécurisée pour la coloration syntaxique
+        let htmlContent = "";
+        htmlContent += "<img src='" + (photo.url || "") + "' alt='Photo " + (index + 1) + "'>";
+        htmlContent += "<div class='diapo-caption'>";
+        htmlContent += "  <p class='caption-ar'>" + (photo.ar || "") + "</p>";
+        htmlContent += "  <p class='caption-fr'>" + (photo.fr || "") + "</p>";
+        htmlContent += "</div>";
+
+        slide.innerHTML = htmlContent;
+        wrapper.appendChild(slide);
+    });
+}
+
+function afficherPhotoDiapo(index) {
+    if (photosCommune.length === 0) return;
+    
+    if (index >= photosCommune.length) index = 0;
+    if (index < 0) index = photosCommune.length - 1;
+    
+    diapoIndex = index;
+    
+    // 1. Supprime l'affichage de la slide précédente
+    const ancienneSlide = document.querySelector(".diapo-slide.active");
+    if (ancienneSlide) {
+        ancienneSlide.classList.remove("active");
+    }
+    
+    // 2. Active la nouvelle slide
+    const nouvelleSlide = document.getElementById("slide-" + diapoIndex);
+    if (nouvelleSlide) {
+        nouvelleSlide.classList.add("active");
+    }
+    
+    // 3. Compteur global
+    const counter = document.getElementById("diapo-counter");
+    if (counter) {
+        counter.textContent = (diapoIndex + 1) + " / " + photosCommune.length;
+    }
+}
+
+function gérerGalerieVide() {
+    photosCommune = [];
+    const wrapper = document.querySelector(".diapo-slides-wrapper");
+    if (wrapper) {
+        wrapper.innerHTML = "<div class='diapo-slide active'><div class='diapo-caption'><p class='caption-fr'>Aucune photo disponible pour cette commune</p></div></div>";
+    }
+    const counter = document.getElementById("diapo-counter");
+    if (counter) {
+        counter.textContent = "0 / 0";
+    }
+}
+
+function changerPhoto(direction) {
+    afficherPhotoDiapo(diapoIndex + direction);
+}
+
+</script>
+
+</body>
+</html>

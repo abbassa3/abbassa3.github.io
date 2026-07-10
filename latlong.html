@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geographical Coordinates & Elevation of Algeria</title>
+  <meta name="description" content="The geographical coordinates (latitude, longitude, and elevation) of all the wilayas of Algeria. A complete and accurate list.">
+  <meta name="keywords" content="GPS coordinates for Algeria, Latitude and longitude, Geography of Algeria, List of 58 wilayas, Administrative map of Algeria">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/favicon.ico">
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Ancre invisible pour le retour en haut de page -->
+<div id="scrolltop"></div>
+
+<!-- #wrap : Conteneur principal du site -->
+<div id="wrap">
+    
+    <header>
+        <!-- Bannière principale -->
+        <div id="banner">
+            <a href="index.html">
+                <img src="images/banner-abbassa.jpg" alt="Pr Mohammed Abbassa - Back to Home">
+            </a>
+        </div>
+        
+        <!-- Titre principal masqué (SEO / Accessibilité) -->
+        <h1>Pr Mohammed Abbassa / د. محمد عباسة</h1>
+        
+        <!-- Menu de navigation Supérieur -->
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="articles.html">Articles</a>
+            <a href="links.html">Links</a>
+            <a href="abbassa-en.html">Profile</a>
+            <a href="abbassa-en.html">Contact</a>
+        </nav>
+</header>
+    <!-- Bouton pour descendre directement en bas de page -->
+    <div class="scrolldown"><a href="#scrolldown">ꜛ</a></div>
+
+<!-- #main : Zone de contenu principal (Page d'erreur 404) -->
+<main class="main-content-geo">
+	        <h2>Geographical Coordinates & Elevation</h2>
+            <p class="desc" lang="ar" dir="rtl">الإحداثيات الجغرافية والارتفاع</p>
+			
+            <hr class="separator">
+
+  <section class="geo-container">
+    
+    <!-- En-tête bilingue -->
+      <p class="geo-subtitle">Sélectionnez une wilaya pour afficher sa position et son altitude moyenne.</p>
+
+    <!-- Sélecteur de Wilaya -->
+    <div class="geo-selector-zone">
+      <label for="geo-wilaya-select">Wilaya / الولاية</label>
+      <select id="geo-wilaya-select" class="form-control">
+        <!-- Rempli dynamiquement par le JavaScript -->
+      </select>
+    </div>
+
+    <!-- Grille d'affichage des résultats -->
+    <div class="geo-results-grid">
+      <!-- Carte Latitude -->
+      <div class="geo-card">
+        <div class="geo-card-icon">📍</div>
+        <div class="geo-card-label">
+          <span class="lbl-fr">Latitude</span>
+          <span class="lbl-ar" dir="rtl">خط العرض</span>
+        </div>
+        <div id="val-lat" class="geo-card-value">--</div>
+      </div>
+
+      <!-- Carte Longitude -->
+      <div class="geo-card">
+        <div class="geo-card-icon">🗺️</div>
+        <div class="geo-card-label">
+          <span class="lbl-fr">Longitude</span>
+          <span class="lbl-ar" dir="rtl">خط الطول</span>
+        </div>
+        <div id="val-lng" class="geo-card-value">--</div>
+      </div>
+
+      <!-- Carte Élévation -->
+      <div class="geo-card highlight-card">
+        <div class="geo-card-icon">⛰️</div>
+        <div class="geo-card-label">
+          <span class="lbl-fr">Élévation (Altitude)</span>
+          <span class="lbl-ar" dir="rtl">الارتفاع عن سطح البحر</span>
+        </div>
+        <div id="val-ele" class="geo-card-value">--</div>
+      </div>
+    </div>
+
+    <!-- ZONE DE LA CARTE ET DU TITRE SÉCURISÉE -->
+    <div class="geo-map-zone" style="text-align: center; margin-top: 30px; border-top: 1px dashed #e2e8f0; padding-top: 25px;">
+        <!-- L'image de la carte -->
+        <img id="geo-wilaya-map" src="" alt="Carte de la Wilaya" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 6px; display: none; box-shadow: 0 4px 10px rgba(0,0,0,0.04);" />
+        
+        <!-- Le titre personnalisé qui s'affiche sous la carte -->
+        <div id="geo-map-title" style="text-align: center; font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; color: #0b4c8c; margin-top: 12px; display: none;"></div>
+    </div>
+
+	  </section>
+	  
+  </main><!-- / #main -->
+  
+    <!-- Pied de page / Footer -->
+    <footer>
+        <!-- Liens Réseaux Sociaux -->
+        <div class="media">
+            <div class="media-buttons">
+                <a href="https://www.facebook.com/abbassa3" class="link facebook" target="_blank" title="Facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://x.com/abbassa27" class="link twitter-x" target="_blank" title="X (Twitter)"><i class="bx bxl-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/mohammed-abbassa-588434309" class="link linkedin" target="_blank" title="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://abbassa.wordpress.com/" class="link wordpress" target="_blank" title="Wordpress Blog"><i class="bx bxl-wordpress"></i></a>
+            </div>
+        </div>
+        
+        <!-- Menu de navigation Inférieur -->
+        <nav class="menu">
+            <a href="photos.html">Gallery</a>
+            <a href="latlong.html" class="active">Lat & long</a>
+			<a href="zipcode.html">Postal code</a>
+            <a href="prayers.html">Prayers</a>
+        </nav>
+        
+        <!-- Mention de Copyright -->
+        <p class="copy">&copy; 2026 - Designed by Prof. Mohammed Abbassa</p>
+    </footer>
+
+    <!-- Bouton de retour en haut de page -->
+    <div class="scrolltop"><a href="#scrolltop">ꜛ</a></div>
+
+</div><!-- / wrap -->
+
+<!-- Ancre invisible pour marquer le bas de page -->
+<div id="scrolldown"></div>
+
+<style>
+/* CONTEXTE GÉOGRAPHIQUE */
+.main-content-geo {
+  max-width: 900px;
+  width: 100%;
+  margin: 10px auto;
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+.geo-container {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+.geo-subtitle { font-family: 'Lucida Sans Unicode', 'Sahl Naskh', Tahoma, Sans-serif; color: #666666; font-size: 15px; text-align: center; margin-bottom: 30px; }
+.geo-selector-zone { display: flex; flex-direction: column; gap: 10px; max-width: 400px; margin: 0 auto 40px auto; }
+.geo-selector-zone label { font-family: 'Lucida Sans Unicode', 'Sahl Naskh', Tahoma, Sans-serif; font-size: 15px; color: #4a4a4a; text-align: center; font-weight: bold; }
+.geo-selector-zone select { padding: 10px; font-size: 16px; border-radius: 4px; border: 1px solid #ccc; width: 100%; box-sizing: border-box; }
+.geo-results-grid { display: flex; gap: 20px; justify-content: space-between; }
+.geo-card { flex: 1; background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; padding: 25px 15px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.02); transition: transform 0.2s ease; }
+.geo-card:hover { transform: translateY(-2px); }
+.highlight-card { background: linear-gradient(135deg, #f0f7ff, #e0f2fe); border-color: #bfdbfe; }
+.geo-card-icon { font-size: 28px; margin-bottom: 12px; }
+.geo-card-label { display: flex; flex-direction: column; gap: 4px; margin-bottom: 15px; }
+.geo-card-label .lbl-fr { font-family: 'Lucida Sans Unicode', 'Sahl Naskh', Tahoma, Sans-serif; font-size: 13px; color: #64748b; text-transform: uppercase; font-weight: bold; letter-spacing: 0.5px; }
+.geo-card-label .lbl-ar { font-family: 'Lucida Sans Unicode', 'Sahl Naskh', Tahoma, Sans-serif; font-size: 16px; color: #475569; }
+.geo-card-value { font-family: 'Lucida Sans Unicode', 'Sahl Naskh', Tahoma, Sans-serif; font-size: 20px; font-weight: bold; color: #0b4c8c; letter-spacing: 0.5px; }
+
+@media (max-width: 650px) {
+  .geo-results-grid { flex-direction: column; gap: 15px; }
+  .geo-container { padding: 20px; }
+}
+</style>
+
+<script>
+const geoWilayas = [
+    { id: 1, name: "01 - Adrar", lat: "27.8743° N", lng: "0.2923° W", ele: "258 m", titreImage: "Carte d'Adrar" },
+    { id: 2, name: "02 - Chlef", lat: "36.1647° N", lng: "1.3317° E", ele: "114 m", titreImage: "Carte de Chlef" },
+    { id: 3, name: "03 - Laghouat", lat: "33.8000° N", lng: "2.8651° E", ele: "750 m", titreImage: "Carte de Laghouat" },
+    { id: 4, name: "04 - Oum El Bouaghi", lat: "35.8754° N", lng: "7.1135° E", ele: "902 m", titreImage: "Carte de Oum el Bouaghi" },
+    { id: 5, name: "05 - Batna", lat: "35.5550° N", lng: "6.1741° E", ele: "1040 m", titreImage: "Carte de Batna" },
+    { id: 6, name: "06 - Béjaïa", lat: "36.7559° N", lng: "5.0843° E", ele: "12 m", titreImage: "Carte de Béjaïa" },
+    { id: 7, name: "07 - Biskra", lat: "34.8504° N", lng: "5.7281° E", ele: "87 m", titreImage: "Carte de Biskra" },
+    { id: 8, name: "08 - Béchar", lat: "31.6167° N", lng: "2.2167° W", ele: "747 m", titreImage: "Carte de Béchar" },
+    { id: 9, name: "09 - Blida", lat: "36.4700° N", lng: "2.8300° E", ele: "260 m", titreImage: "Carte de Blida" },
+    { id: 10, name: "10 - Bouira", lat: "36.3749° N", lng: "3.9020° E", ele: "525 m", titreImage: "Carte de Bouira" },
+    { id: 11, name: "11 - Tamanrasset", lat: "22.7850° N", lng: "5.5228° E", ele: "1377 m", titreImage: "Carte de Tamanrasset" },
+    { id: 12, name: "12 - Tébessa", lat: "35.4042° N", lng: "8.1242° E", ele: "858 m", titreImage: "Carte de Tébessa" },
+    { id: 13, name: "13 - Tlemcen", lat: "34.8783° N", lng: "1.3150° W", ele: "842 m", titreImage: "Carte de Tlemcen" },
+    { id: 14, name: "14 - Tiaret", lat: "35.3710° N", lng: "1.3170° E", ele: "978 m", titreImage: "Carte de Tiaret" },
+    { id: 15, name: "15 - Tizi Ouzou", lat: "36.7118° N", lng: "4.0459° E", ele: "182 m", titreImage: "Carte de Tizi Ouzou" },
+    { id: 16, name: "16 - Alger", lat: "36.7525° N", lng: "3.0420° E", ele: "16 m", titreImage: "Carte d'Alger" },
+    { id: 17, name: "17 - Djelfa", lat: "34.6724° N", lng: "3.2530° E", ele: "1138 m", titreImage: "Carte de Djelfa" },
+    { id: 18, name: "18 - Jijel", lat: "36.8206° N", lng: "5.7667° E", ele: "10 m", titreImage: "Carte de Jijel" },
+    { id: 19, name: "19 - Sétif", lat: "36.1900° N", lng: "5.4137° E", ele: "1096 m", titreImage: "Carte de Sétif" },
+    { id: 20, name: "20 - Saïda", lat: "34.8303° N", lng: "0.1517° E", ele: "857 m", titreImage: "Carte de Saïda" },
+    { id: 21, name: "21 - Skikda", lat: "36.8792° N", lng: "6.9012° E", ele: "9 m", titreImage: "Carte de Skikda" },
+    { id: 22, name: "22 - Sidi Bel Abbès", lat: "35.1899° N", lng: "0.6308° W", ele: "470 m", titreImage: "Carte de Sidi Bel Abbès" },
+    { id: 23, name: "23 - Annaba", lat: "36.9000° N", lng: "7.7667° E", ele: "3 m", titreImage: "Carte de Annaba" },
+    { id: 24, name: "24 - Guelma", lat: "36.4621° N", lng: "7.4261° E", ele: "256 m", titreImage: "Carte de Guelma" },
+    { id: 25, name: "25 - Constantine", lat: "36.3650° N", lng: "6.6147° E", ele: "640 m", titreImage: "Carte de Constantine" },
+    { id: 26, name: "26 - Médéa", lat: "36.2642° N", lng: "2.7539° E", ele: "920 m", titreImage: "Carte de Médéa" },
+    { id: 27, name: "27 - Mostaganem", lat: "35.9312° N", lng: "0.0892° E", ele: "104 m", titreImage: "Carte de Mostaganem" },
+    { id: 28, name: "28 - M'Sila", lat: "35.7058° N", lng: "4.5419° E", ele: "441 m", titreImage: "Carte de M'Sila" },
+    { id: 29, name: "29 - Mascara", lat: "35.3966° N", lng: "0.1403° E", ele: "382 m", titreImage: "Carte de Mascara" },
+    { id: 30, name: "30 - Ouargla", lat: "31.9493° N", lng: "5.3250° E", ele: "128 m", titreImage: "Carte de Ouargla" },
+    { id: 31, name: "31 - Oran", lat: "35.6911° N", lng: "0.6417° W", ele: "60 m", titreImage: "Carte de Oran" },
+    { id: 32, name: "32 - El Bayadh", lat: "33.6831° N", lng: "1.0193° E", ele: "1304 m", titreImage: "Carte de El Bayadh" },
+    { id: 33, name: "33 - Illizi", lat: "26.4833° N", lng: "8.4667° E", ele: "562 m", titreImage: "Carte de Illizi" },
+    { id: 34, name: "34 - Bordj Bou Arréridj", lat: "36.0732° N", lng: "4.7611° E", ele: "916 m", titreImage: "Carte de Bordj Bou Arréridj" },
+    { id: 35, name: "35 - Boumerdès", lat: "36.7597° N", lng: "3.4731° E", ele: "40 m", titreImage: "Carte de Boumerdès" },
+    { id: 36, name: "36 - El Tarf", lat: "36.7672° N", lng: "8.3136° E", ele: "15 m", titreImage: "Carte de El Tarf" },
+    { id: 37, name: "37 - Tindouf", lat: "27.6711° N", lng: "8.1478° W", ele: "401 m", titreImage: "Carte de Tindouf" },
+    { id: 38, name: "38 - Tissemsilt", lat: "35.6072° N", lng: "1.8106° E", ele: "849 m", titreImage: "Carte de Tissemsilt" },
+    { id: 39, name: "39 - El Oued", lat: "33.3672° N", lng: "6.8631° E", ele: "76 m", titreImage: "Carte de El Oued" },
+    { id: 40, name: "40 - Khenchela", lat: "35.4358° N", lng: "7.1433° E", ele: "1122 m", titreImage: "Carte de Khenchela" },
+    { id: 41, name: "41 - Souk Ahras", lat: "36.2864° N", lng: "7.9511° E", ele: "699 m", titreImage: "Carte de Souk Ahras" },
+    { id: 42, name: "42 - Tipaza", lat: "36.5894° N", lng: "2.4475° E", ele: "5 m", titreImage: "Carte de Tipaza" },
+    { id: 43, name: "43 - Mila", lat: "36.4503° N", lng: "6.2644° E", ele: "464 m", titreImage: "Carte de Mila" },
+    { id: 44, name: "44 - Aïn Defla", lat: "36.2644° N", lng: "1.9678° E", ele: "280 m", titreImage: "Carte de Aïn Defla" },
+    { id: 45, name: "45 - Naâma", lat: "33.2667° N", lng: "0.3167° W", ele: "1176 m", titreImage: "Carte de Naâma" },
+    { id: 46, name: "46 - Aïn Témouchent", lat: "35.2975° N", lng: "1.1404° W", ele: "250 m", titreImage: "Carte de Aïn Témouchent" },
+    { id: 47, name: "47 - Ghardaïa", lat: "32.4904° N", lng: "3.6733° E", ele: "487 m", titreImage: "Carte de Ghardaïa" },
+    { id: 48, name: "48 - Relizane", lat: "35.7373° N", lng: "0.5558° E", ele: "98 m", titreImage: "Carte de Relizane" },
+    { id: 49, name: "49 - Timimoun", lat: "29.2578° N", lng: "0.2306° E", ele: "288 m", titreImage: "Carte de Timimoun" },
+    { id: 50, name: "50 - Bordj Badji Mokhtar", lat: "21.3283° N", lng: "0.9542° E", ele: "401 m", titreImage: "Carte de Bordj Badji Mokhtar" },
+    { id: 51, name: "51 - Ouled Djellal", lat: "34.4167° N", lng: "5.0667° E", ele: "238 m", titreImage: "Carte de Ouled Djellal" },
+    { id: 52, name: "52 - Béni Abbès", lat: "30.0833° N", lng: "2.1667° W", ele: "495 m", titreImage: "Carte de Béni Abbès" },
+    { id: 53, name: "53 - In Salah", lat: "27.1936° N", lng: "2.4808° E", ele: "275 m", titreImage: "Carte de In Salah" },
+    { id: 54, name: "54 - In Guezzam", lat: "19.5656° N", lng: "5.7725° E", ele: "400 m", titreImage: "Carte de In Guezzam" },
+	{ id: 55, name: "55 - Touggourt", lat: "33.1000° N", lng: "6.0667° E", ele: "85 m", titreImage: "Carte de Touggourt" },
+    { id: 56, name: "56 - Djanet", lat: "24.5500° N", lng: "9.4833° E", ele: "1035 m", titreImage: "Carte de Djanet" },
+	{ id: 57, name: "57 - El M'Ghair", lat: "33.9500° N", lng: "5.9167° E", ele: "2 m", titreImage: "Carte de El M'Ghair" },
+    { id: 58, name: "58 - El Meniaa", lat: "30.5833° N", lng: "2.8833° E", ele: "380 m", titreImage: "Carte de El Meniaa" }
+
+];
+
+const selectGeo = document.getElementById('geo-wilaya-select');const latEl = document.getElementById('val-lat');const lngEl = document.getElementById('val-lng');const eleEl = document.getElementById('val-ele');const mapEl = document.getElementById('geo-wilaya-map');const titleEl = document.getElementById('geo-map-title');
+
+function initGeoSelect() {geoWilayas.forEach(w => {const opt = document.createElement('option');opt.value = w.id;opt.textContent = w.name;selectGeo.appendChild(opt);});selectGeo.value = 16;updateGeoValues(16);}
+function updateGeoValues(id) {const data = geoWilayas.find(item => item.id == id);if (data) {latEl.textContent = data.lat;lngEl.textContent = data.lng;eleEl.textContent = data.ele;
+if (titleEl) {titleEl.textContent = data.titreImage;}
+mapEl.src = 'maps/' + id + '.webp';
+}
+}
+mapEl.onload = function() {this.style.display = 'inline-block';if (titleEl) titleEl.style.display = 'block';
+};
+mapEl.onerror = function() {this.style.display = 'none';if (titleEl) titleEl.style.display = 'none';
+};
+selectGeo.addEventListener('change', (e) => {updateGeoValues(e.target.value);
+}
+);
+initGeoSelect();
+
+</script>
+
+</body>
+</html>

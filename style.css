@@ -1,0 +1,646 @@
+/* ==========================================================================
+   0. POLICES PERSONNALISÉES (Chargement prioritaire)
+   ========================================================================== */
+/* sahl naskh */
+@font-face {
+  font-family: 'Sahl Naskh';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Sahl Naskh Bold'), local('Sahl Naskh'), url('fonts/SahlNaskh-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Sahl Naskh';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Sahl Naskh Regular'), local('Sahl Naskh'), url('fonts/SahlNaskh-400.woff2') format('woff2');
+}
+/* end sahl naskh */
+
+
+/* ==========================================================================
+   1. BLOC COMMUN (Partagé par tous les écrans, ordonné du haut vers le bas)
+   ========================================================================== */
+/* Configuration globale */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Georgia, Tahoma, 'Segoe UI', Sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e2effc;
+}
+
+/* Conteneur principal */
+#wrap {
+  max-width: 920px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+/* En-tête / Header */
+header {
+  margin-bottom: 40px;
+}
+
+footer, header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#banner {
+  text-align: center;
+}
+
+#banner img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Menus de navigation */
+.menu {
+  overflow: hidden;
+  width: 100%;
+  margin: 7px 0;
+  background: #258ec2;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.menu a {
+  color: #fff;
+  margin: 2px;
+  min-width: 100px;
+  text-decoration: none;
+  border: 1px solid #369;
+  border-radius: 4px;
+  opacity: 0.8;
+}
+
+.menu a:hover {
+  color: black;
+  background-color: skyBlue;
+  transition: all 1.5s ease;
+}
+
+.active {
+  background-color: #369;
+}
+
+.nav-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.nav-switch {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #258ec2;
+  font-family: Tahoma, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: all 1.5s ease;
+}
+
+.nav-item:hover {
+  color: black;
+  background-color: skyBlue;
+  transition: 1.5s;
+}
+
+.actif {
+  color: #fff;
+  background-color: #369;
+}
+
+/* Zone de contenu textuel */
+#content {
+  font-family: 'Lucida Sans Unicode', 'Sahl Naskh', Tahoma, Sans-serif;
+  text-align: justify;
+  border-radius: 4px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+}
+
+/* Éléments textuels et titres */
+h1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+h2 {
+  color: #2c3e50;
+  margin: 0;  
+  font-size: 18px;
+  text-align: center;
+}
+
+h3 {
+  margin: 0;
+  font-weight: 700;
+  text-align: justify;
+}
+
+h4, .link {
+  margin: 0;
+  font-weight: 400;
+  text-align: center;
+}
+
+p {
+  margin: 0 0 6px 0;
+}
+
+a {
+  color: #369;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #c66;
+  transition: 1.5s;
+}
+
+.center {
+  text-align: center;
+}
+
+/* Multilinguisme (Arabe) */
+[lang="ar"] {
+  font-family: 'Sahl Naskh', Tahoma, Sans-serif;
+  direction: rtl;
+  text-align: justify;
+}
+
+.desc[lang="ar"] {
+  display: block;
+  color: #404748;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.subtitle[lang="ar"] {
+  display: block;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* Séparateurs */
+.separator {
+  height: 1px;
+  width: 25%;
+  margin: 15px auto;
+  background: radial-gradient(circle, #336699 0%, rgba(255,255,255,0) 70%);
+  border: 0;
+}
+
+.small {
+  height: 1px;
+  width: 12%;
+  margin: 10px auto;
+  background: radial-gradient(circle, #2c3e50 0%, rgba(255,255,255,0) 70%);
+  border: 0;
+}
+
+/* Article abstracts */
+.abstract-ar {
+  font-family: 'Sahl Naskh', Tahoma, Sans-serif;
+}
+
+.abstract-en, .abstract-fr {
+  font-family: 'Lucida Sans Unicode', Tahoma, Sans-serif;
+}
+
+/* Système de Colonnes */
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: system-ui, sans-serif;
+  padding: 10px;
+  background-color: #f4f6f9;
+  box-sizing: border-box;
+}
+
+.columns-wrapper {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  max-width: 920px;
+}
+
+.vertical-column {
+  flex: 1;
+  margin: 0;
+  padding: 10px; 
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.col-left {
+  border-top: 5px solid #007bff;
+}
+
+.col-right {
+  border-top: 5px solid #28a745;
+}
+
+/* Pied de page / Footer & Réseaux sociaux */
+footer {
+  background-color: #258ec2;
+  border-radius: 4px;
+}
+
+.media {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.media-buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.media-buttons .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin: 0 8px;
+  background-color: #4070f4;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.media-buttons a:hover {
+  color: orange;
+}
+
+.media-buttons .link:hover {
+  transform: scale(1.1);
+}
+
+.link.facebook { background-color: #1877f2; }
+.link.twitter-x { background-color: #1da1f2; }
+.link.linkedin { background-color: #0077b5; }
+.link.wordpress { background-color: #21759b; }
+
+.copy {
+  width: 100%;
+  color: #fff;
+  margin-bottom: 0;
+  padding: 17px;
+  background: #369;
+  text-align: center;
+  opacity: 0.5;
+}
+
+/* Navigation et défilement (Scroll) */
+.scrolltop {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: white;
+  text-align: center;
+  float: right;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 9;
+}
+
+.scrolldown {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  margin: 0;
+  background: white;
+  text-align: center;
+  float: right;
+  border-radius: 50%;
+  transform: rotate(180deg);
+  z-index: 9;
+}
+
+.scrolltop a, .scrolldown a {
+  position: relative;
+  display: inline-block;
+  bottom: 10px;
+  font-family: Tahoma, Geneva, Sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  text-decoration: none;
+  animation: bounce 2s infinite;
+}
+
+.backtolist {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  background: #369;
+  border: 1px solid #369;
+  float: left;
+  border-radius: 50%;
+  transform: rotate(270deg);
+  z-index: 9;
+}
+
+.backtolist a {
+  position: relative;
+  bottom: 10px;
+  left: 6px;
+  color: #fff;
+  font-family: Tahoma, Geneva, Sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.backtolist a:hover {
+  color: orange;
+}
+
+.backtolist:hover {
+  background: #1da1f2;
+}
+
+/* Filigrane d'arrière-plan */
+.gravatar {
+  position: relative;
+  background-image: url('https://0.gravatar.com/userimage/25021297/f6b5aedf3540cc42ffecdb0851938b4a?size=256&axis=min');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-attachment: fixed;
+  opacity: 0.9; /* Rend le filigrane semi-transparent */
+  z-index: 1; /* S'assure que le filigrane est en dessous du texte */
+}
+
+/* ==========================================================================
+   2. ZONE MOBILE (Écrans de 0px à 479px)
+   ========================================================================== */
+@media screen and (max-width: 479px) {
+#wrap {
+  padding: 10px;
+}
+
+.menu {
+  padding: 10px 5px;
+}
+
+.menu a {
+  display: block;
+  margin: 5px 2px;
+  padding: 10px 12px;
+  font-size: 16px;
+}
+
+.nav-switch {
+  gap: 12px;
+}
+
+.nav-item {
+  width: 38px;
+  height: 38px;
+  font-size: 14px;
+}
+
+#content {
+  padding: 10px 15px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+[lang="ar"] {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+h4, .link {
+  font-size: 15px;
+}
+
+.columns-wrapper {
+  flex-direction: column;
+}
+
+.media-buttons .link {
+  width: 32px;
+  height: 32px;
+  font-size: 16px;
+}
+
+.scrolltop {
+  right: 5px;
+  bottom: 35px;
+}
+
+.scrolldown {
+  right: 5px;
+  bottom: 42px;
+}
+
+.backtolist {
+  left: 5px;
+  bottom: 5px;
+}
+
+.gravatar {
+  background-size: cover;
+  }
+}
+
+
+/* ==========================================================================
+   3. ZONE TABLETTE (Écrans de 480px à 768px)
+   ========================================================================== */
+@media screen and (min-width: 480px) and (max-width: 768px) {
+#wrap {
+  padding: 15px;
+}
+
+.menu {
+  padding: 8px 10px 7px 10px;
+}
+
+.menu a {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 18px;
+}
+
+.nav-switch {
+  gap: 15px;
+}
+
+.nav-item {
+  width: 33px;
+  height: 33px;
+  font-size: 15px;
+}
+
+#content {
+  padding: 6px 20px;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+[lang="ar"] {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4, .link {
+  font-size: 16px;
+}
+
+.columns-wrapper {
+  flex-direction: row;
+}
+
+.media-buttons .link {
+  width: 25px;
+  height: 25px;
+  font-size: 18px;
+}
+
+.scrolltop {
+  right: 8px;
+  bottom: 44px;
+}
+
+ .scrolldown {
+  right: 10px;
+  bottom: 52px;
+}
+
+.backtolist {
+  left: auto;
+  right: 8px;
+  bottom: 10px;
+}
+
+.gravatar {
+  background-size: contain;
+  }
+}
+
+
+/* ==========================================================================
+   4. ZONE ORDINATEUR (Écrans à partir de 769px)
+   ========================================================================== */
+@media screen and (min-width: 769px) {
+#wrap {
+  padding: 20px;
+ }
+
+.menu {
+  padding: 8px 10px 7px 10px;
+}
+
+.menu a {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 19px;
+ }
+
+ .nav-switch {
+  gap: 15px;
+ }
+
+.nav-item {
+   width: 33px;
+   height: 33px;
+  font-size: 15px;
+}
+
+#content {
+  padding: 6px 20px;
+  font-size: 19px;
+  line-height: 1.8;
+}
+[lang="ar"] {
+  font-size: 19px;
+  line-height: 1.8;
+}
+h3 {
+font-size: 19px;
+}
+h4, .link {
+  font-size: 17px;
+}
+.columns-wrapper {
+  flex-direction: row;
+}
+.media-buttons .link {
+  width: 25px;
+  height: 25px;
+  font-size: 18px;
+}
+.scrolltop {
+right: 8px;
+bottom: 44px;
+}
+.scrolldown {
+  right: 10px;
+  bottom: 52px;
+}
+.backtolist {
+  left: 6px;
+  bottom: 10px;
+}
+.gravatar {
+  background-size: auto;
+ }
+}

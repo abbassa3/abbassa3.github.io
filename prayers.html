@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prayer Times in Algeria: Daily Calendar by Wilaya</title>
+  <meta name="description" content="View prayer times for all 58 wilayas of Algeria. See your daily and monthly calendar for free in HTML format.">
+  <meta name="keywords" content="Prayer calendar Algeria, Prayer times by wilayas in Algeria, Download daily and monthly prayer calendar, Salat times Algeria, daily Shuruq Algeria">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/favicon.ico">
+<style>
+/* ==========================================================================
+   1. STYLE GLOBAL ET ORDINATEURS (Écrans larges > 768px jusqu'à 900px)
+   ========================================================================== */
+
+/* Alignement horizontal, boutons égaux et centrés */
+.selector-zone {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.selector-zone select, 
+.selector-zone input {
+    width: 220px;
+    height: 45px;
+    padding: 10px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.selector-zone select:focus, 
+.selector-zone input:focus {
+    border-color: #27ae60;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: justify;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #27ae60;
+    color: white;
+    font-weight: 600;
+}
+
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+.prayer-name {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.prayer-time {
+    font-size: 18px;
+    color: #27ae60;
+    font-weight: bold;
+}
+
+/* Style de votre image réelle */
+.wilaya-image-container {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.wilaya-image-container img {
+    width: auto;
+    max-width: auto;
+    max-height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: none;
+}
+
+
+/* ==========================================================================
+   2. ÉCRANS TABLETTES (Entre 601px et 768px)
+   ========================================================================== */
+@media (min-width: 601px) and (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    th, td {
+        padding: 12px 8px;
+        font-size: 15px;
+    }
+    .prayer-time {
+        font-size: 16px;
+    }
+    .wilaya-image-container img {
+        max-height: 350px;
+    }
+}
+
+/* ==========================================================================
+   3. ÉCRANS SMARTPHONES (Moins de 600px)
+   ========================================================================== */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    
+    .container {
+        padding: 15px;
+    }
+
+    /* Les sélecteurs s'empilent verticalement sur smartphone */
+    .selector-zone {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .selector-zone select, 
+    .selector-zone input {
+        width: 100%;
+        padding: 14px;
+        font-size: 15px;
+    }
+
+    /* Transformation du tableau rigide en blocs de cartes lisibles */
+    thead {
+        display: none; /* Masque l'en-tête du tableau */
+    }
+    
+    tr {
+        display: block;
+        padding: 12px 15px;
+        background: #fdfdfd;
+        margin-bottom: 10px;
+        border-radius: 8px;
+        border: 1px solid #eef2f1;
+        overflow: hidden;
+    }
+    
+    td {
+        display: inline-block;
+        padding: 0;
+        border-bottom: none;
+    }
+    
+    .prayer-name {
+        float: left;
+        font-size: 15px;
+    }
+    
+    .prayer-time {
+        float: right;
+        font-size: 16px;
+    }
+    
+    /* Nettoyage des floats pour l'image suivante */
+    tr::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    .wilaya-image-container img {
+        max-height: 250px;
+    }
+}
+</style> 
+
+<style>
+/* ==========================================================================
+   STYLE DU CONVERTISSEUR
+   ========================================================================== */
+    .container {
+        width: 100%;
+        justify-content: center;
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        box-sizing: border-box;
+        margin-top: 20px;
+    }
+
+    /* Grille des résultats à 2 colonnes désormais */
+    .results-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .result-card {
+        background: #ffffff;
+        border: 1px solid #ddd;
+        border-top: 4px solid #27ae60;
+        padding: 25px;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+    }
+
+    .result-card h4 {
+        margin: 0 0 15px 0;
+        color: #2c3e50;
+        font-size: 18px;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 10px;
+    }
+
+    .result-date {
+        font-size: 20px;
+        color: #27ae60;
+        font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+        .results-grid {
+            grid-template-columns: 1fr; /* Passage sur une seule colonne */
+            gap: 15px;
+        }
+        .result-card {
+            padding: 20px;
+        }
+    }
+</style>
+
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">    
+</head>
+<body>
+
+<!-- Ancre invisible pour le retour en haut de page -->
+<div id="scrolltop"></div>
+
+<!-- #wrap : Conteneur principal du site -->
+<div id="wrap">
+    
+    <header>
+        <!-- Bannière principale -->
+        <div id="banner">
+            <a href="index.html">
+                <img src="images/banner-abbassa.jpg" alt="Pr Mohammed Abbassa - Back to Home">
+            </a>
+        </div>
+        
+        <!-- Titre principal masqué (SEO / Accessibilité) -->
+        <h1>Pr Mohammed Abbassa / د. محمد عباسة</h1>
+        
+        <!-- Menu de navigation Supérieur -->
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="articles.html">Articles</a>
+            <a href="links.html">Links</a>
+            <a href="abbassa-en.html">Profile</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+</header>
+    <!-- Bouton pour descendre directement en bas de page -->
+    <div class="scrolldown"><a href="#scrolldown">ꜛ</a></div>
+
+<!-- #main : Zone de contenu principal (Page d'erreur 404) -->
+
+<main id="content">
+<section>
+    <h2>🕌 Prayer times for the wilayas of Algeria</h2>
+    <p class="desc" lang="ar" dir="rtl">مواقيت الصلاة لولايات الجزائر</p>
+    
+    <hr class="separator">
+
+    <div class="selector-zone">
+        <select id="wilayaSelect" onchange="calculerPrieres()"></select>
+        <input type="date" id="dateInput" onchange="calculerPrieres(); convertir();">
+    </div>
+
+    <table style="width: 100%; margin: 0 auto 20px auto; border-collapse: collapse; font-family: 'Lucida Sans Unicode', 'Sahl Naskh', Tahoma, Sans-serif; table-layout: fixed;">
+        <thead>
+            <tr style="background-color: #f4f4f4; font-weight: bold;">
+                <th style="width: 50%; border: 1px solid #ddd; padding: 8px; text-align: center;">Prière / Prayer</th>
+                <th style="width: 50%; border: 1px solid #ddd; padding: 8px; text-align: center;">Horaire / Time</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            </tbody>
+    </table>
+
+    <div class="container">
+        <h2>📅 Convertisseur Grégorien / Hégirien</h2>
+        
+        <div class="results-grid">
+            <div class="result-card">
+                <h4>Date Grégorienne</h4>
+                <div id="resGregorian" class="result-date">--</div>
+            </div>
+            <div class="result-card">
+                <h4>Date Hégirienne (Hijri)</h4>
+                <div id="resIslamic" class="result-date">--</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mosque-map-zone" style="text-align: center; margin-top: 30px; border-top: 1px dashed #e2e8f0; padding-top: 25px; max-width: 900px; margin-left: auto; margin-right: auto;">
+        <img id="wilayaImage" src="" alt="Mosquée de la Wilaya" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 6px; display: none; box-shadow: 0 4px 10px rgba(0,0,0,0.04);" />
+        <div id="mosque-image-title" style="text-align: center; font-family: 'Lucida Sans Unicode', 'Sahl Naskh', Tahoma, Sans-serif; font-size: 16px; font-weight: bold; color: #0b4c8c; margin-top: 12px; display: none;"></div>
+    </div>
+
+    <hr class="separator">
+</section>
+</main><!-- / #main -->
+
+    <!-- Pied de page / Footer -->
+    <footer>
+        <!-- Liens Réseaux Sociaux -->
+        <div class="media">
+            <div class="media-buttons">
+                <a href="https://www.facebook.com/abbassa3" class="link facebook" target="_blank" title="Facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://x.com/abbassa27" class="link twitter-x" target="_blank" title="X (Twitter)"><i class="bx bxl-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/mohammed-abbassa-588434309" class="link linkedin" target="_blank" title="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://abbassa.wordpress.com/" class="link wordpress" target="_blank" title="Wordpress Blog"><i class="bx bxl-wordpress"></i></a>
+            </div>
+        </div>
+        
+        <!-- Menu de navigation Inférieur -->
+        <nav class="menu">
+            <a href="photos.html">Gallery</a>
+            <a href="latlong.html">Lat & long</a>
+			<a href="zipcode.html">Postal code</a>
+            <a href="prayers.html" class="active">Prayers</a>
+        </nav>
+        
+        <!-- Mention de Copyright -->
+        <p class="copy">&copy; 2026 - Designed by Prof. Mohammed Abbassa</p>
+    </footer>
+
+    <!-- Bouton de retour en haut de page -->
+    <div class="scrolltop"><a href="#scrolltop">ꜛ</a></div>
+
+</div><!-- / wrap -->
+
+<!-- Ancre invisible pour marquer le bas de page -->
+<div id="scrolldown"></div>
+
+<script>
+const wilayas = [
+    { id: 1, name: "01 - Adrar", lat: 27.87, lng: -0.29, titreImage: "سجد مدينة أدرار" },
+    { id: 2, name: "02 - Chlef", lat: 36.16, lng: 1.33, titreImage: "مسجد مدينة الشلف" },
+    { id: 3, name: "03 - Laghouat", lat: 33.80, lng: 2.86, titreImage: "مسجد مدينة الأغواط" },
+    { id: 4, name: "04 - Oum El Bouaghi", lat: 35.87, lng: 7.11, titreImage: "مسجد السلام بمدينة أم البواقي" },
+    { id: 5, name: "05 - Batna", lat: 35.55, lng: 6.17, titreImage: "مسجد أول نوفمبر بمدينة باتنة" },
+    { id: 6, name: "06 - Béjaïa", lat: 36.75, lng: 5.08, titreImage: "مسجد سيدي السوفي بمدينة بجاية" },
+    { id: 7, name: "07 - Biskra", lat: 34.85, lng: 5.72, titreImage: "مسجد مدينة بسكرة" },
+    { id: 8, name: "08 - Béchar", lat: 31.61, lng: -2.21, titreImage: "مسجد الفلاح بمدينة بشار" },
+    { id: 9, name: "09 - Blida", lat: 36.47, lng: 2.83, titreImage: "مسجد الكوثر بمدينة البليدة" },
+    { id: 10, name: "10 - Bouira", lat: 36.37, lng: 3.90, titreImage: "المسجد العتيق بمدينة البويرة" },
+    { id: 11, name: "11 - Tamanrasset", lat: 22.78, lng: 5.52, titreImage: "مسجد مدينة تمنراست" },
+    { id: 12, name: "12 - Tébessa", lat: 35.40, lng: 8.12, titreImage: "مسجد العربي التبسي بمدينة تبسة" },
+    { id: 13, name: "13 - Tlemcen", lat: 34.87, lng: -1.31, titreImage: "المسجد الكبير بمدينة تلمسان" },
+    { id: 14, name: "14 - Tiaret", lat: 35.37, lng: 1.31, titreImage: "المسجد الكبير بمدينة تيارت" },
+    { id: 15, name: "15 - Tizi Ouzou", lat: 36.71, lng: 4.04, titreImage: "مسجد مدينة تيزي وزو" },
+    { id: 16, name: "16 - Alger", lat: 36.75, lng: 3.04, titreImage: "مسجد سيدي رمضان بقصبة مدينة الجزائر" },
+    { id: 17, name: "17 - Djelfa", lat: 34.67, lng: 3.25, titreImage: "مسجد مدينة الجلفة" },
+    { id: 18, name: "18 - Jijel", lat: 36.82, lng: 5.76, titreImage: "مسجد النور بمدينة جيجل" },
+    { id: 19, name: "19 - Sétif", lat: 36.19, lng: 5.41, titreImage: "مئذنة المسجد العتيق بمدينة سطيف" },
+    { id: 20, name: "20 - Saïda", lat: 34.83, lng: 0.15, titreImage: "مسجد سيدي بودية مدينة سعيدة" },
+    { id: 21, name: "21 - Skikda", lat: 36.87, lng: 6.90, titreImage: "مسجد مدينة سكيكدة" },
+    { id: 22, name: "22 - Sidi Bel Abbès", lat: 35.18, lng: -0.63, titreImage: "مسجد مدينة سيدي بلعباس" },
+    { id: 23, name: "23 - Annaba", lat: 36.90, lng: 7.76, titreImage: "مسجد الباي بمدينة عنابة" },
+    { id: 24, name: "24 - Guelma", lat: 36.46, lng: 7.42, titreImage: "مسجد ابن خلدون العتيق بمدينة قالمة" },
+    { id: 25, name: "25 - Constantine", lat: 36.36, lng: 6.61, titreImage: "المسجد الكبير بمدينة قسنطينة" },
+    { id: 26, name: "26 - Médéa", lat: 36.26, lng: 2.75, titreImage: "مسجد مدينة المدية" },
+    { id: 27, name: "27 - Mostaganem", lat: 35.93, lng: 0.09, titreImage: "المسجد المريني بمدينة مستغانم" },
+    { id: 28, name: "28 - M'Sila", lat: 35.70, lng: 4.54, titreImage: "مسجد عمر بن عبد العزيز بمدينة المسيلة" },
+    { id: 29, name: "29 - Mascara", lat: 35.39, lng: 0.14, titreImage: "الجامع الكبير بمدينة معسكر" },
+    { id: 30, name: "30 - Ouargla", lat: 31.94, lng: 5.32, titreImage: "مسجد مدينة ورقلة" },
+    { id: 31, name: "31 - Oran", lat: 35.69, lng: -0.64, titreImage: "مئذنة مسجد الباشا بمدينة وهران" },
+    { id: 32, name: "32 - El Bayadh", lat: 33.68, lng: 1.01, titreImage: "مسجد الشهداء بمدينة البيض" },
+    { id: 33, name: "33 - Illizi", lat: 26.48, lng: 8.46, titreImage: "مسجد مدينة إيليزي" },
+    { id: 34, name: "34 - Bordj Bou Arréridj", lat: 36.07, lng: 4.76, titreImage: "مسجد الإبراهيمي بمدينة برج بوعريريج" },
+    { id: 35, name: "35 - Boumerdès", lat: 36.75, lng: 3.47, titreImage: "مسجد التقوى بمدينة بومرداس" },
+    { id: 36, name: "36 - El Tarf", lat: 36.76, lng: 8.31, titreImage: "مسجد الفرقان بمدينة الطارف" },
+    { id: 37, name: "37 - Tindouf", lat: 27.67, lng: -8.14, titreImage: "مسجد حمزة بن عبد المطلب بمدينة تندوف" },
+    { id: 38, name: "38 - Tissemsilt", lat: 35.60, lng: 1.81, titreImage: "مسجد الإبراهيمي بمدينة تيسمسيلت" },
+    { id: 39, name: "39 - El Oued", lat: 33.36, lng: 6.86, titreImage: "مسجد مدينة الوادي" },
+    { id: 40, name: "40 - Khenchela", lat: 35.43, lng: 7.14, titreImage: "مسجد الأمير عبد القادر بمدينة خنشلة" },
+    { id: 41, name: "41 - Souk Ahras", lat: 36.28, lng: 7.95, titreImage: "مسجد البدر بمدينة سوق أهراس" },
+    { id: 42, name: "42 - Tipaza", lat: 36.58, lng: 2.44, titreImage: "مسجد مدينة تيبازة" },
+    { id: 43, name: "43 - Mila", lat: 36.45, lng: 6.26, titreImage: "مسجد التوبة بمدينة ميلة" },
+    { id: 44, name: "44 - Aïn Defla", lat: 36.26, lng: 1.96, titreImage: "الجامع الكبير بمدينة عين الدفلى" },
+    { id: 45, name: "45 - Naâma", lat: 33.26, lng: -0.31, titreImage: "مسجد مدينة النعامة" },
+    { id: 46, name: "46 - Aïn Témouchent", lat: 35.29, lng: -1.14, titreImage: "مسجد مدينة عين تموشنت" },
+    { id: 47, name: "47 - Ghardaïa", lat: 32.49, lng: 3.67, titreImage: "مسجد الواحة بمدينة غرداية" },
+    { id: 48, name: "48 - Relizane", lat: 35.73, lng: 0.55, titreImage: "مسجد النور بمدينة غليزان" },
+    { id: 49, name: "49 - Timimoun", lat: 29.25, lng: 0.23, titreImage: "مسجد مدينة تيميمون" },
+    { id: 50, name: "50 - Bordj Badji Mokhtar", lat: 21.32, lng: 0.95, titreImage: "مسجد مدينة برج باجي مختار" },
+    { id: 51, name: "51 - Ouled Djellal", lat: 34.41, lng: 5.06, titreImage: "مسجد مدينة أولاد جلال" },
+    { id: 52, name: "52 - Béni Abbès", lat: 30.08, lng: -2.16, titreImage: "مسجد القصر القديم بمدينة بني عباس" },
+    { id: 53, name: "53 - In Salah", lat: 27.19, lng: 2.48, titreImage: "مسجد مدينة عين صالح" },
+    { id: 54, name: "54 - In Guezzam", lat: 19.56, lng: 5.77, titreImage: "مسجد مدينة عين قزام" },
+    { id: 55, name: "55 - Touggourt", lat: 33.10, lng: 6.06, titreImage: "مسجد بابا ساسي مدينة تقرت" },
+    { id: 56, name: "56 - Djanet", lat: 24.55, lng: 9.48, titreImage: "مسجد مدينة جانت" },
+    { id: 57, name: "57 - El M'Ghair", lat: 33.95, lng: 5.91, titreImage: "الجامع الكبير بمدينة المغير" },
+    { id: 58, name: "58 - El Meniaa", lat: 30.58, lng: 2.88, titreImage: "مسجد سيدي أحمد بلماضي بمدينة المنيعة" }
+];
+
+window.onload = function() {
+    const select = document.getElementById('wilayaSelect');
+    const dateInput = document.getElementById('dateInput');
+    
+    if (select) {
+        wilayas.forEach(w => select.add(new Option(w.name, w.id)));
+        select.value = 16; // Alger par défaut
+    }
+    
+    if (dateInput) {
+        dateInput.value = new Date().toISOString().split('T')[0];
+    }
+
+    calculerPrieres();
+    convertir();
+};
+
+function d2r(d) { return (d * Math.PI) / 180.0; }
+function r2d(r) { return (r * 180.0) / Math.PI; }
+
+function calculerPrieres() {
+    var selectEl = document.getElementById('wilayaSelect');
+    var dateInputEl = document.getElementById('dateInput');
+    if (!selectEl || !dateInputEl) return;
+
+    var id = parseInt(selectEl.value);
+    var dateSelected = new Date(dateInputEl.value);
+    var w = wilayas.find(function(item) { return item.id === id; });
+    
+    if (!w) return;
+
+    var lat = w.lat;
+    var lng = w.lng;
+    var timezone = 1;
+
+    var debutAnnee = new Date(dateSelected.getFullYear(), 0, 0);
+    var diff = dateSelected - debutAnnee;
+    var jourDeLan = Math.floor(diff / (1000 * 60 * 60 * 24));
+
+    var g = (357.529 + 0.98560028 * jourDeLan) % 360;
+    var q = (280.459 + 0.98564736 * jourDeLan) % 360;
+    var L = (q + 1.915 * Math.sin(d2r(g)) + 0.020 * Math.sin(d2r(2 * g))) % 360;
+    var e = 23.439 - 0.00000036 * jourDeLan;
+    
+    var declinaison = r2d(Math.asin(Math.sin(d2r(e)) * Math.sin(d2r(L))));
+    var RA = r2d(Math.atan2(Math.cos(d2r(e)) * Math.sin(d2r(L)), Math.cos(d2r(L)))) / 15;
+    var eqTime = (q / 15) - RA;
+
+    var dhuhrDecimal = 12 + timezone - (lng / 15) - eqTime;
+
+    function calculAngleHoraire(angle) {
+        var val = (Math.sin(d2r(angle)) - Math.sin(d2r(lat)) * Math.sin(d2r(declinaison))) / (Math.cos(d2r(lat)) * Math.cos(d2r(declinaison)));
+        if (val > 1 || val < -1) return 0;
+        return r2d(Math.acos(val)) / 15;
+    }
+
+    var hFajr = calculAngleHoraire(-17.9);
+    var hChourouk = calculAngleHoraire(-0.733);
+    var hMaghrib = calculAngleHoraire(-1.633);
+    var hIsha = calculAngleHoraire(-17);
+
+    var asrAngle = r2d(Math.atan(1 / (1 + Math.tan(d2r(Math.abs(lat - declinaison))))));
+    var hAsr = calculAngleHoraire(asrAngle);
+
+    function format(dec) {
+        if (dec === 0 || isNaN(dec)) return "--:--";
+        var h = Math.floor(dec);
+        var m = Math.round((dec - h) * 60);
+        if (m === 60) { h++; m = 0; }
+        if (h >= 24) h -= 24;
+        if (h < 0) h += 24;
+        return (String(h).padStart(2, '0') + ':' + String(m).padStart(2, '0'));
+    }
+
+    var times = {
+        "Fajr (الفجر)": { heure: format(dhuhrDecimal - hFajr), type: "obligatoire" },
+        "Chourouk (الشروق)": { heure: format(dhuhrDecimal - hChourouk), type: "soleil" },
+        "Dhuhr (الظهر)": { heure: format(dhuhrDecimal), type: "obligatoire" },
+        "Asr (العصر)": { heure: format(dhuhrDecimal + hAsr), type: "obligatoire" },
+        "Maghrib (المغرب)": { heure: format(dhuhrDecimal + hMaghrib), type: "obligatoire" },
+        "Isha (العشاء)": { heure: format(dhuhrDecimal + hIsha), type: "obligatoire" }
+    };
+
+    var tbody = document.getElementById('tableBody');
+    if (tbody) {
+        var rowsHtml = '';
+        Object.entries(times).forEach(function(entry) {
+            var priere = entry[0];
+            var obj = entry[1];
+            var styleLigne = obj.type === "soleil" ? ' style="background-color: #f5f5f5; color: #888888; font-style: italic;"' : '';
+            rowsHtml += '<tr' + styleLigne + '><td style="border: 1px solid #ddd; padding: 12px;">' + priere + '</td><td style="border: 1px solid #ddd; padding: 12px; text-align: right; font-weight: bold; color: #0b4c8c;">' + obj.heure + '</td></tr>';
+        });
+        tbody.innerHTML = rowsHtml;
+    }
+
+    var imgElement = document.getElementById('wilayaImage');
+    var titleEl = document.getElementById('mosque-image-title');
+
+    if (imgElement && titleEl) {
+        titleEl.textContent = w.titreImage;
+        imgElement.onload = function() {
+            this.style.display = 'inline-block';
+            titleEl.style.display = 'block';
+        };
+        imgElement.onerror = function() {
+            this.style.display = 'none';
+            titleEl.style.display = 'none';
+        };
+        imgElement.src = 'mosques/' + id + '.webp';
+    }
+}
+
+function convertir() {
+    const dateInputEl = document.getElementById('dateInput');
+    if (!dateInputEl) return;
+    
+    const dateVal = dateInputEl.value;
+    if (!dateVal) return;
+
+    // Découpage manuel pour éviter les bugs de fuseaux horaires
+    const [year, month, day] = dateVal.split('-');
+    const date = new Date(year, month - 1, day);
+
+    const resGreg = document.getElementById('resGregorian');
+    const resIsla = document.getElementById('resIslamic');
+    
+    if (resGreg) {
+        const optGreg = { day: 'numeric', month: 'long', year: 'numeric' };
+        resGreg.textContent = new Intl.DateTimeFormat('fr-FR', optGreg).format(date);
+    }
+    
+    if (resIsla) {
+        try {
+            const optIsla = { day: 'numeric', month: 'long', year: 'numeric', calendar: 'islamic-umalqura' };
+            resIsla.textContent = new Intl.DateTimeFormat('fr-FR', optIsla).format(date);
+        } catch (e) {
+            try {
+                const optIslaStd = { day: 'numeric', month: 'long', year: 'numeric', calendar: 'islamic' };
+                resIsla.textContent = new Intl.DateTimeFormat('fr-FR', optIslaStd).format(date);
+            } catch (err) {
+                resIsla.textContent = "Non supporté";
+            }
+        }
+    }
+}
+</script>
+</body>
+</html>
